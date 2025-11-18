@@ -71,7 +71,7 @@ img {
 
 .mask {
   clip-path: inset(100% 0 0 0);
-  animation: imageUp var(--amount) cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite forwards;
+  animation: imageUp 7.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite forwards;
   animation-delay: var(--delay);
 }
 
