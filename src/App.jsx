@@ -1,11 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Typography.css";
 import HERODATA from "./HERODATA.json";
 
 function App() {
   const imgRef = useRef(null);
 
-  const limit = 30; // límite del movimiento
+  const limit = 100; // límite del movimiento
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -34,34 +34,77 @@ function App() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+
+
   return (
     <>
-      <section className="w-full min-h-[100vh]  flex items-center justify-center text-white">
+      <nav className="fixed w-full flex items-center justify-between p-8 top-0 left-0 z-50">
+        <div className="head-container flex items-center gap-4 text-white">
+          <span className="text-[18px]"><a href="#">Jaime González</a></span>
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="7.7836" height="7.7836" fill="white" />
+          </svg>
+          <span className="text-gray-500 text-[18px]"><a href="#">Product Designer</a></span>
+          <span className="text-gray-500 text-[18px]"><a href="#">Frontend Developer</a></span>
+          <span className="text-gray-500 text-[18px]"><a href="#">Illustrator</a></span>
+        </div>
+        <button><svg width="34" height="21" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H25.5898V7.7836H0V0Z" fill="white" />
+          <path d="M8.18518 12.4932H33.775V20.2768H8.18518V12.4932Z" fill="white" />
+        </svg>
+        </button>
+      </nav>
+
+      <section className="w-full min-h-[100vh]  flex items-center justify-center text-white"
+      >
+        <figure className="absolute top-0 left-0 w-full h-full -z-100 overflow-hidden">
+          {HERODATA.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className={`img-bg w-full h-full absolute top-0 left-0`}
+                style={{ "--delay": `${index * 2.5}s`, backgroundImage: `url(/home/${item.image})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}></div>
+            )
+          }
+          )}
+        </figure>
+
         <div
           ref={imgRef}
-          className="absolute  h-[500px] w-[750px] -z-99"
+          className="absolute  h-[500px] w-[750px] z-[2]"
         >
           {HERODATA.map((item, index) => {
             return (
-              <figure key={item.id} className={`mask-${index} overflow-hidden absolute top-0 left-0`}>
+              <figure
+                key={item.id}
+                className={`mask overflow-hidden absolute top-0 left-0`}
+                style={{ "--delay": `${index * 2.5}s`, "--amount": `${HERODATA.length * 2.5}s` }}
+              >
                 <img
                   src={`/home/${item.image}`}
                   className="h-[500px] w-[750px] object-cover"
                 />
+
               </figure>
             );
           })}
+
+
+
         </div>
         <h1
-          className="text-[5.625rem] font-bold z-99 absolute 
-                 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex gap-4"
+          className="text-[5.625rem] font-bold z-99 absolute tracking-tight
+                 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex gap-4 z-[10]"
         >
           Sometimes I{" "}
-          <span className="flex flex-col h-[150px] overflow-hidden pr-4 relative w-[220px]">
+          <div className="words-container  flex flex-col h-[150px] overflow-hidden pr-4 relative w-[220px]">
             {HERODATA.map((item, index) => {
-              return <strong className={`word-${index} absolute top-0 left-0`} key={item.id}>{item.skill}</strong>;
+              return <strong
+                className={`word absolute top-0 left-0`} key={item.id}
+                style={{ "--delay": `${index * 2.5}s` }}
+              >{item.skill}</strong>;
             })}
-          </span>
+          </div>
         </h1>
       </section>
     </>

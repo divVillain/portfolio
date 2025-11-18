@@ -1,12 +1,14 @@
 [
-
-    {
-      "skill": "design",
-      "image": "design.png"
-    },
-    {
-      "skill": "paint",
-      "image": "paint.png"
-    }
-  
+  {
+    "skill": "paint",
+    "image": "paint.png"
+  },
+  {
+    "skill": "design",
+    "image": "design.png"
+  },
+  {
+    "skill": "code",
+    "image": "code.png"
+  }
 ]

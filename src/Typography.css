@@ -40,43 +40,121 @@ img {
 @keyframes imageUp {
   0% {
     clip-path: inset(100% 0 0 0);
+    z-index: 2;
   }
-  100% {
+
+  10% {
     clip-path: inset(0 0 0 0);
+    z-index: 2;
+  }
+
+  50% {
+    clip-path: inset(0 0 0 0);
+    z-index: 1;
+  }
+
+  54% {
+    clip-path: inset(100% 0 0 0);
+    z-index: 1;
+  }
+
+  80% {
+    clip-path: inset(100% 0 0 0);
+    z-index: 1;
+  }
+
+  100% {
+    clip-path: inset(100% 0 0 0);
+    z-index: 2;
   }
 }
 
-.mask-0 {
+.mask {
   clip-path: inset(100% 0 0 0);
-  animation: imageUp 0.64s cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+  animation: imageUp var(--amount) cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite forwards;
+  animation-delay: var(--delay);
 }
-.mask-1 {
-  clip-path: inset(100% 0 0 0);
-  animation: imageUp 0.64s cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards 2.5s;
-}
+
+
 
 @keyframes wordsUp {
   0% {
     transform: translateY(100%);
   }
-  20% {
+
+  8% {
     transform: translateY(0%);
   }
-  80% {
+
+  32% {
     transform: translateY(0%);
   }
+
+  40% {
+    transform: translateY(-100%);
+  }
+
   100% {
     transform: translateY(-100%);
   }
 }
 
 /* Cada palabra con delay distinto */
-.word-0 {
+
+/* Las palabras se mueven dentro del contenedor */
+.word {
   transform: translateY(100%);
-  animation: wordsUp 3s cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards;
+  animation: wordsUp 7.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+  animation-delay: var(--delay);
 }
 
-.word-1 {
-  transform: translateY(100%);
-  animation: wordsUp 3s cubic-bezier(0.79, 0.14, 0.15, 0.86) forwards 2.5s;
+
+@keyframes opacityBg {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleImg {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.img-bg {
+  opacity: 0;
+  animation: opacityBg 7.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite, scaleImg 7.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+
+  animation-delay: var(--delay);
 }
