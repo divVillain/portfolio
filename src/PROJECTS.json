@@ -1,0 +1,37 @@
+[
+    {
+      "name": "Illustration",
+      "cover": "bg-illustration.png",
+      "keys": ["Character Design", "Concept Art", "Cover Art"]
+    },
+    {
+      "name": "Demócrata",
+      "cover": "code.png",
+      "keys": ["Digital Newspaper", "Product Design", "Design System"]
+    },
+    {
+      "name": "Colin Powell School",
+      "cover": "design.png",
+      "keys": ["University Website", "Product Design", "Design System"]
+    },
+    {
+      "name": "BBVA Suiza",
+      "cover": "design2.png",
+      "keys": ["Landing Page", "Scrollytelling"]
+    },
+    {
+      "name": "The Other Spain",
+      "cover": "tos.png",
+      "keys": ["E-Commerce, Design System, Tour WebApp"]
+    },
+    {
+      "name": "Nexus Project",
+      "cover": "nexus.png",
+      "keys": ["Typography", "WebApp", "Design System"]
+    },
+    {
+      "name": "Fundación Sinfonía",
+      "cover": "code2.png",
+      "keys": ["Corporative Site", "Branding"]
+    }  
+]
