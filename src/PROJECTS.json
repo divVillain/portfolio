@@ -21,12 +21,12 @@
     },
     {
       "name": "The Other Spain",
-      "cover": "tos.png",
-      "keys": ["E-Commerce, Design System, Tour WebApp"]
+      "cover": "tos.webp",
+      "keys": ["E-Commerce", "Design System", "Tour WebApp"]
     },
     {
       "name": "Nexus Project",
-      "cover": "nexus.png",
+      "cover": "nexus.webp",
       "keys": ["Typography", "WebApp", "Design System"]
     },
     {
@@ -35,3 +35,4 @@
       "keys": ["Corporative Site", "Branding"]
     }  
 ]
+

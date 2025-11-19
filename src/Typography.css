@@ -19,7 +19,7 @@
 
 * {
   font-family: "NeueHaasGrotesk";
-  /*border: 1px solid pink;*/
+  /* border: 1px solid pink; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -172,4 +172,8 @@ img {
 
 .projectAlt.default {
   opacity: .2;
+}
+
+.project {
+  transition: all .3s ease-in-out;
 }

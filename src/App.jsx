@@ -19,14 +19,14 @@ function App() {
       scrollTrigger: {
         trigger: "#hero",
         start: "top top",
-        end: "bottom top", // Cambiado a 'bottom top' para que termine justo cuando #hero sale de la vista
+        end: "bottom 50%", // Cambiado a 'bottom top' para que termine justo cuando #hero sale de la vista
         scrub: true,
-        // markers: true, // Descomentar para depurar
+        markers: true, // Descomentar para depurar
       }
     });
 
     // 2. Animación de desaparición del Hero (bgHero)
-    heroTl.to("#bgHero", {
+    heroTl.to("#hero", {
       opacity: 0,
       ease: "power1.inOut",
     }, 0); // El '0' asegura que esta animación comienza al inicio del timeline
@@ -50,8 +50,6 @@ function App() {
 // --- Resto de los useEffects y el return ...
 // ...
 
-  const FALLBACK_IMAGE = '/home/code.png'; 
-  // ... (otros useRef, useState, y useEffects) ...
   
   const imgRef = useRef(null);
 
@@ -124,6 +122,7 @@ function App() {
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const projectRefs = useRef([]);
+  const [isHovered, setIsHovered] = useState(false, null);
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
@@ -185,7 +184,7 @@ function App() {
 
       <section id="hero" className=" w-full min-h-[100vh]  flex items-center justify-center text-white"
       >
-        <figure id="bgHero" className="absolute top-0 left-0 w-full h-full -z-100 overflow-hidden">
+        <figure id="bgHero" className="fixed top-0 left-0 w-full h-full -z-100 overflow-hidden">
           {HERODATA[cycle].slice(0, HERODATA[cycle].length - 1).map((item, index) => {
             return (
               <div
@@ -268,14 +267,14 @@ function App() {
 
       <section
         id="projects"
-        className="projects w-full min-h-[100vh] relative "
+        className="projects w-full min-h-[100vh] relative"
       >
         <div
           // Aplica una transición para que el cambio de backgroundImage sea suave
-          className={`pin-bg w-full h-[100vh] sticky top-0 left-0 transition-opacity duration-300 ease-in-out`}
+          className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-opacity duration-300 ease-in-out`}
           style={{
             // ... tus estilos actuales
-            backgroundImage: `url(${hoveredIndex !== null ? `/home/${PROJECTS[hoveredIndex].cover}` : FALLBACK_IMAGE}) `, // Usa la fallback image para evitar un fondo vacío inicial
+            backgroundImage: `url(${hoveredIndex !== null ? `/home/${PROJECTS[hoveredIndex].cover}` : ''}) `, // Usa la fallback image para evitar un fondo vacío inicial
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: "brightness(.2)",
@@ -284,21 +283,20 @@ function App() {
           }}>
         </div>
 
-        <ul className="flex flex-col items-center h-full mt-[-800px] pb-[800px]">
+        <ul className="flex flex-col items-center h-full pt-[200px] pb-[800px]">
           {PROJECTS.map((item, index) => {
             return (
 
               <li
                 ref={el => projectRefs.current[index] = el}
                 onMouseEnter={() => handleMouseEnter(index)}
-                key={index} className="w-full relative flex flex-col items-center py-10">
-                <a href="#" className={`w-full text-[5.625rem] font-bold tracking-tight
-                 flex text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{item.name}</span> </a>
-                <div className="flex gap-4 absolute top-[156px] left-[50%] -translate-x-[50%]">
+                key={index} className={`w-full relative flex flex-col items-center py-10`}>
+                <a href="#" className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
+                 flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{item.name}</span> </a>
+                <div className="flex gap-4 left-[50%] ">
                   {hoveredIndex === index ? item.keys.map((key, index) => {
-                    return <span key={index} className="projectAlt text-center">{key}</span>;
+                    return <><span key={index} className="projectAlt text-center">{key}</span> <span className="projectAlt default text-center">{index != item.keys.length - 1 ? "|" : ""}</span></>;
                   }) : null}
-
                 </div>
               </li>
 
