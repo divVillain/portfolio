@@ -1,8 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.jsx'
-import './Typography.css'
+import './stylesheets/typography.css'
+import './stylesheets/animations.css'
+import './stylesheets/global.css'
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

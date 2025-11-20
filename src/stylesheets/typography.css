@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NeueHaasGrotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/NHaasGroteskTXPro-65Md.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ZTOtez";
+  src: url("/fonts/ZTOtez-ExtLtSemiCondIta.otf") format("opentype");
+}
+
+
+/* || GENERAL || */
+
+* {
+  font-family: "NeueHaasGrotesk";
+   /* border: 1px solid pink; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+strong {
+  font-family: "ZTOtez", sans-serif;
+}
+
+/* || END GENERAL || */
+
+
+/* || PROJECTS || */
+
+.projectAlt {
+  font-family: "NeueHaasGrotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.projectAlt.default {
+  opacity: .2;
+}
+
+.project {
+  transition: all .3s ease-in-out;
+}
+
+.pin-bg {
+  transition: opacity .3s ease-in-out;
+}
+
+/* || END PROJECTS || */

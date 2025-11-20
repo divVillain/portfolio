@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+img {
+  filter: brightness(0.8);
+}
