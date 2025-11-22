@@ -84,7 +84,7 @@ export default function Projects() {
                 }}>
             </div>
 
-            <ul className="flex flex-col items-center h-full pt-[200px] pb-[800px]">
+            <ul className="flex flex-col items-center h-full pt-[200px] pb-[400px]">
                 {PROJECTS.map((item, index) => {
                     return (
                         <li

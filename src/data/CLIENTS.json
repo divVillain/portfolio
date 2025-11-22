@@ -1,0 +1,26 @@
+[
+    {
+        "name": "BBVA",
+        "logo": "bbva.png"
+    },
+    {
+        "name": "CUNY",
+        "logo": "cuny.png"
+    },
+    {
+        "name": "Telefónica",
+        "logo": "telefonica.png"
+    },
+    {
+        "name": "Repsol",
+        "logo": "repsol.png"
+    },
+    {
+        "name": "CaixaBank",
+        "logo": "caixa.png"
+    },
+    {
+        "name": "Acciona",
+        "logo": "acciona.png"
+    }
+]

@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 
-
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Nav from "./Modules/Nav";
-import Hero from "./Modules/Hero/Hero.jsx";
-import Projects from "./Modules/Hero/Projects.jsx";
 
+import Nav from "./Modules/Nav";
+import Hero from "./Modules/Home/Hero.jsx";
+import Projects from "./Modules/Home/Projects.jsx";
+import Clients from "./Modules/Home/Clients.jsx";
+import About from "./Modules/Home/About.jsx";
 
 function App() {
 
@@ -23,7 +24,6 @@ function App() {
         start: "top top",
         end: "bottom 50%", // Cambiado a 'bottom top' para que termine justo cuando #hero sale de la vista
         scrub: true,
-        markers: true, // Descomentar para depurar
       }
     });
 
@@ -44,7 +44,29 @@ function App() {
     // podrías usar una posición de timeline como 0.2 para un ligero retraso:
     // heroTl.to('#projects', { opacity: 1, ease: "power1.inOut" }, 0.2);
 
-  }, []);
+    const projectsFade = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#projects",
+        start: "50% top",
+        end: "bottom 20%", // Cambiado a 'bottom top' para que termine justo cuando #hero sale de la vista
+        scrub: true,
+      }
+    });
+
+    projectsFade.to("#projects", {
+      opacity: 0,
+      ease: "power1.inOut"
+    }, 0);
+    projectsFade.fromTo("#clients", {
+      opacity: 0
+    }, {
+      opacity: 1,
+      ease: "power1.inOut"
+    }, 0.2);
+  }
+    , []);
+
+
 
 
   return (
@@ -52,6 +74,8 @@ function App() {
       <Nav />
       <Hero />
       <Projects />
+      <Clients />
+      <About />
     </>
   );
 }

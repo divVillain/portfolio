@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 @font-face {
   font-family: "NeueHaasGrotesk";
   font-style: normal;
@@ -59,3 +65,25 @@ strong {
 }
 
 /* || END PROJECTS || */
+
+/* || ABOUT || */
+
+.skill {
+  @apply text-white text-[5.625rem] shrink-0 w-[fit-content] leading-[100%] tracking-tight
+}
+
+.skill:nth-child(1) {
+ @apply pl-[5vw]
+}
+.skill:nth-child(2) {
+ @apply pl-[35vw]
+}
+
+.skill:nth-child(4) {
+ @apply mt-[100px] pl-[50vw]
+}
+.skill:nth-child(5) {
+ @apply pl-[60vw]
+}
+
+/* || END ABOUT || */
