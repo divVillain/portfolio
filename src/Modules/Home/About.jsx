@@ -3,7 +3,7 @@ export default function About() {
     const SKILLS = ["Artificial Intelligence", "Product Design", "Frontend Development", "Branding", "Illustration"];
 
     return (
-        <section id="skill-container" className="h-[100vh] w-full relative">
+        <section id="skill-container" className="h-[100vh] w-full relative z-50">
             <figure>
                 <img src="/home/portrait.png" id="about" className="absolute bottom-0 right-20 brightness-[25%] h-[90vh]" />
             </figure>

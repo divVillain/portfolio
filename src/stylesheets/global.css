@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-/* *{
+*{
   border: 1px solid pink;
-} */
+} 
 
 body {
   background-color: rgb(25, 25, 25);

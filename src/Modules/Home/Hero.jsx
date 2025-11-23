@@ -73,7 +73,7 @@ export default function Hero() {
 
 
     return (
-        <section id="hero" className=" w-full min-h-[100vh]  flex items-center justify-center text-white"
+        <section id="hero" className=" w-full min-h-[100vh]  flex items-center justify-center text-white bg-[#191919]"
         >
             <figure id="bgHero" className="fixed top-0 left-0 w-full h-full -z-100 overflow-hidden">
                 {HERODATA[cycle].slice(0, HERODATA[cycle].length - 1).map((item, index) => {
