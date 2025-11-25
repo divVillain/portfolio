@@ -38,7 +38,7 @@ export default function Projects() {
     useEffect(() => {
         const handleScroll = () => {
             const elementUnderCursor = document.elementFromPoint(mousePos.x, mousePos.y);
-            
+
             if (!elementUnderCursor) {
                 setHoveredIndex(null);
                 return;
@@ -71,9 +71,8 @@ export default function Projects() {
             onMouseLeave={handleContainerMouseLeave}
         >
             <div
-                className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-opacity duration-500 ease-in-out pointer-events-none ${
-                    isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
-                }`}
+                className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-opacity duration-500 ease-in-out pointer-events-none ${isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
+                    }`}
                 style={{
                     backgroundImage: displayedIndex !== null ? `url(${`/home/${PROJECTS[displayedIndex].cover}`})` : '',
                     backgroundSize: 'cover',
@@ -93,11 +92,11 @@ export default function Projects() {
                             key={index} className={`w-full relative flex flex-col items-center py-10`}>
                             <a href="#" className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
                                 flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{item.name}</span> </a>
-                            <div className="flex gap-4">
+                            <ul className="flex gap-4">
                                 {hoveredIndex === index ? item.keys.map((key, index) => {
-                                    return <div className="flex gap-4" key={index} ><span className="projectAlt text-center">{key}</span> <span className="projectAlt default text-center">{index != item.keys.length - 1 ? "|" : ""}</span></div>;
+                                    return <li className="flex gap-4" key={index} ><span className="projectAlt text-center">{key}</span> <span className="projectAlt default text-center">{index != item.keys.length - 1 ? "|" : ""}</span></li>;
                                 }) : null}
-                            </div>
+                            </ul>
                         </li>
                     );
                 })}
