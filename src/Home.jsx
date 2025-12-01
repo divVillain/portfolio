@@ -2,6 +2,7 @@ import Hero from "./Modules/Home/Hero.jsx";
 import Projects from "./Modules/Home/Projects.jsx";
 import Clients from "./Modules/Home/Clients.jsx";
 import About from "./Modules/Home/About.jsx";
+import AboutMe from "./Modules/Home/AboutMe.jsx";
 
 import { useEffect } from "react";
 
@@ -56,12 +57,7 @@ export default function Home() {
             opacity: 0,
             ease: "power1.inOut"
         }, 0);
-        projectsFade.fromTo("#clients", {
-            opacity: 0
-        }, {
-            opacity: 1,
-            ease: "power1.inOut"
-        }, 0.2);
+
     }
         , []);
 
@@ -69,9 +65,10 @@ export default function Home() {
     return (
         <div className="bg-[#191919] z-50">
             <Hero />
-            <Projects />
+            <AboutMe />
             <Clients />
-            <About />
+            <Projects />
+
         </div>
     )
 }

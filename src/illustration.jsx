@@ -2,6 +2,7 @@ import ProjectHeader from "./Modules/Projects/ProjectHeader.jsx";
 import ProjectEntry from "./Modules/Projects/ProjectEntry.jsx";
 import ProjectsImages from "./Modules/Projects/ProjectsImages.jsx";
 import ProjectContent from "./Modules/Projects/ProjectContent.jsx";
+import NextProject from "./Modules/Projects/NextProject.jsx";
 
 
 export default function Illustration() {
@@ -15,6 +16,7 @@ export default function Illustration() {
             <ProjectsImages grid={3}/>
             </section>
             <ProjectContent />
+            <NextProject />
         </div>
     )
 }

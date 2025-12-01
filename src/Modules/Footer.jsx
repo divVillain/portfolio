@@ -7,7 +7,6 @@ export default function Footer() {
                     <div className="socials flex gap-4">
                         <a href="">LinkedIn</a>
                         <a href="">Instagram</a>
-                        <a href="">Whatsapp</a>
                     </div>
                 </div>
             </footer>

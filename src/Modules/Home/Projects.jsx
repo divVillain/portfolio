@@ -67,7 +67,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="projects w-full min-h-[100vh] relative bg-[#191919]"
+            className="projects w-full min-h-[100vh] relative "
             onMouseLeave={handleContainerMouseLeave}
         >
             <div
