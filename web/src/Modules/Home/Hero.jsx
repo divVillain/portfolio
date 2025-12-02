@@ -1,8 +1,11 @@
+'use client';
+
 import HERODATA from "../../HERODATA.json";
 import { useEffect, useState, useRef } from "react";
 
-
 export default function Hero() {
+    
+
     const [cycle, setCycle] = useState(0);
 
     useEffect(() => {
@@ -28,7 +31,6 @@ export default function Hero() {
 
         const intervalId = setInterval(() => {
             setDelayCycle(prevDelayCycle => {
-                console.log(prevDelayCycle);
                 if (prevDelayCycle === HERODATA.length - 1) {
                     return 0;
                 }

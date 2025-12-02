@@ -1,4 +1,6 @@
-export default function About() {
+'use client';
+
+export default function About({ description = 'hola' }) {
 
     const SKILLS = ["Artificial Intelligence", "Product Design", "Frontend Development", "Branding", "Illustration"];
 
@@ -10,7 +12,7 @@ export default function About() {
             <section className="h-[100vh] w-full flex items-center justify-center z-50 relative">
                 <article className="flex flex-col gap-10">
                     <p className="text-pretty text-[52px] text-white font-bold leading-[120%] max-w-[1100px]">
-                       Hi! I&apos;m Jaime, an interdisciplinary designer working on innovative projects for leading companies blending design, tech and AI tools... and I also paint!
+                        {description}
                     </p>
                     <span className="text-[#C9C9C9]">Currently working as Product Designer in <a href="#" className="font-bold text-white">Prodigioso Volcán</a></span>
                 </article>
