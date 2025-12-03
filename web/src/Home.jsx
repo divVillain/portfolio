@@ -4,6 +4,7 @@ import Clients from "./Modules/Home/Clients.jsx";
 import About from "./Modules/Home/About.jsx";
 import AboutMe from "./Modules/Home/AboutMe.jsx";
 import { getHomeInfo } from "./lib/get-home-info.js";
+import { getProjectsInfo } from "./lib/get-projects-info.js";
 
 
 import { useEffect, useState } from "react";
@@ -18,7 +19,9 @@ export default function Home() {
     useEffect(() => {
         const fetchData = async () => {
             const { title, description, skill } = await getHomeInfo();
+            const data = await getProjectsInfo();
             console.log(title, description, skill);
+            console.log(data);
             sethomeDescription( description );
             console.log(homeDescription);
         }

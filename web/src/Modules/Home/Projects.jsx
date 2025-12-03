@@ -2,10 +2,23 @@
 
 import { useEffect, useRef, useState } from "react";
 import PROJECTS from "../../PROJECTS.json";
+import { getProjectsInfo } from "../../lib/get-projects-info.js";
 
 
 
 export default function Projects() {
+
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setProjects(await getProjectsInfo())
+        }
+        fetchData();
+    });
+
+
+
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [displayedIndex, setDisplayedIndex] = useState(null);
     const [isFadingOut, setIsFadingOut] = useState(false);
@@ -76,7 +89,7 @@ export default function Projects() {
                 className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-opacity duration-500 ease-in-out pointer-events-none ${isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
                     }`}
                 style={{
-                    backgroundImage: displayedIndex !== null ? `url(${`/home/${PROJECTS[displayedIndex].cover}`})` : '',
+                    backgroundImage: displayedIndex !== null ? `url(${`/home/${projects[displayedIndex].cover.name}`})` : '',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     filter: "brightness(.2)",
@@ -86,22 +99,22 @@ export default function Projects() {
             </div>
 
             <ul className="flex flex-col items-center h-full pt-[200px] pb-[400px]">
-                {PROJECTS.map((item, index) => {
+                {projects != [] ?  projects.map((project, index) => {
                     return (
                         <li
                             ref={el => projectRefs.current[index] = el}
                             onMouseEnter={() => handleMouseEnter(index)}
                             key={index} className={`w-full relative flex flex-col items-center py-10`}>
                             <a href="#" className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
-                                flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{item.name}</span> </a>
-                            <ul className="flex gap-4">
-                                {hoveredIndex === index ? item.keys.map((key, index) => {
-                                    return <li className="flex gap-4" key={index} ><span className="projectAlt text-center">{key}</span> <span className="projectAlt default text-center">{index != item.keys.length - 1 ? "|" : ""}</span></li>;
+                                flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{project.title}</span> </a>
+                            {project.project_categories != undefined ? <ul className="flex gap-4">
+                                {hoveredIndex === index ? project.project_categories.map((projectCategory, index) => {
+                                    return <li className="flex gap-4" key={index} ><span className="projectAlt text-center">{projectCategory.name}</span> <span className="projectAlt default text-center">{index != project.project_categories.length - 1 ? "|" : ""}</span></li>;
                                 }) : null}
-                            </ul>
+                            </ul> : null}
                         </li>
                     );
-                })}
+                }) : null}
             </ul>
         </section>
     );
