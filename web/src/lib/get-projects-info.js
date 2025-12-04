@@ -3,7 +3,7 @@ const { VITE_STRAPI_HOST } = import.meta.env;
 
 
 export function getProjectsInfo() {
-    return query('projects?populate[0]=cover&populate[1]=project_categories&populate[2]=sections')
+    return query('projects?populate[0]=cover&populate[1]=project_categories&populate[3]=sections.images')
         .then(res => {
            return res.data
         })

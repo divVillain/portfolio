@@ -62,7 +62,8 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "description.project-description"
+        "project.project-images",
+        "project.project-description"
       ]
     }
   }

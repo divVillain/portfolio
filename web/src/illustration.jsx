@@ -27,25 +27,23 @@ export default function Illustration({ projectId = 1 }) {
         <div>
             {projects ? <ProjectHeader project={projects[projectId]} /> : null}
             {projects ? <ProjectEntry project={projects[projectId]} /> : null}
-            <section className="flex flex-col gap-0 py-10 bg-white">
-                <ProjectsImages grid={1} />
-                <ProjectsImages grid={2} />
-                <ProjectsImages grid={3} />
-            </section>
-            {projects[projectId]?.sections?.map((section, index) => {
-                const Component = PROJECT_BLOCK_COMPONENTS[section.__component];
 
-                if (!Component) {
+            {projects[projectId]?.sections?.map((section, index) => {
+                const Block = PROJECT_BLOCK_COMPONENTS[section.__component];
+
+                if (!Block) {
                     console.warn("Bloque no mapeado:", section.__component);
                     return null;
                 }
 
                 // Le pasamos los datos del bloque; puedes añadir también project si lo necesitas
                 return (
-                    <Component
+                    <Block
                         key={section.id ?? index}
                         block={section}
                         project={projects[projectId]}
+                        section={index}
+                        gridSize={section.gridSize ? section.gridSize : null}
                     />
                 );
             })}

@@ -1,5 +1,7 @@
 import ProjectContent from "./ProjectContent.jsx";
+import ProjectsImages from "./ProjectsImages.jsx";
 
 export const PROJECT_BLOCK_COMPONENTS = {
-  "description.project-description": ProjectContent,
+  "project.project-description": ProjectContent,
+  "project.project-images": ProjectsImages,
 };

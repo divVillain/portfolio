@@ -1,20 +1,42 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface DescriptionProjectDescription extends Struct.ComponentSchema {
-  collectionName: 'components_description_project_descriptions';
+export interface ProjectProjectDescription extends Struct.ComponentSchema {
+  collectionName: 'components_project_project_descriptions';
   info: {
-    displayName: 'myProjectDescription';
-    icon: 'alien';
+    displayName: 'projectDescription';
+    icon: 'layer';
   };
   attributes: {
-    text: Schema.Attribute.Text;
+    text: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
+export interface ProjectProjectImages extends Struct.ComponentSchema {
+  collectionName: 'components_project_project_images';
+  info: {
+    displayName: 'ProjectImages';
+    icon: 'landscape';
+  };
+  attributes: {
+    gridSize: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 3;
+          min: 1;
+        },
+        number
+      >;
+    images: Schema.Attribute.Media<'images' | 'files' | 'videos', true> &
+      Schema.Attribute.Required;
   };
 }
 
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'description.project-description': DescriptionProjectDescription;
+      'project.project-description': ProjectProjectDescription;
+      'project.project-images': ProjectProjectImages;
     }
   }
 }
