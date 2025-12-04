@@ -1,18 +1,17 @@
 'use client';
 
 import { useEffect, useRef, useState } from "react";
-import PROJECTS from "../../PROJECTS.json";
 import { getProjectsInfo } from "../../lib/get-projects-info.js";
 
 
 
 export default function Projects() {
 
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState(undefined);
 
     useEffect(() => {
         const fetchData = async () => {
-            setProjects(await getProjectsInfo())
+            setProjects(await getProjectsInfo([]))
         }
         fetchData();
     });
@@ -99,7 +98,7 @@ export default function Projects() {
             </div>
 
             <ul className="flex flex-col items-center h-full pt-[200px] pb-[400px]">
-                {projects != [] ?  projects.map((project, index) => {
+                {projects != undefined || projects != undefined ?  projects.map((project, index) => {
                     return (
                         <li
                             ref={el => projectRefs.current[index] = el}
