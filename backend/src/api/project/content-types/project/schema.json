@@ -58,6 +58,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::project-category.project-category"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "description.project-description"
+      ]
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_description_project_descriptions",
+  "info": {
+    "displayName": "myProjectDescription",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

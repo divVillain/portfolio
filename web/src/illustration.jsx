@@ -7,10 +7,11 @@ import NextProject from "./Modules/Projects/NextProject.jsx";
 
 import { useEffect, useState } from "react";
 import { getProjectsInfo } from "./lib/get-projects-info.js";
+import { PROJECT_BLOCK_COMPONENTS } from "./Modules/Projects/ProjectBlockMap.js";
 
 
 
-export default function Illustration({ projectId = 0 }) {
+export default function Illustration({ projectId = 1 }) {
 
     const [projects, setProjects] = useState([]);
 
@@ -19,7 +20,7 @@ export default function Illustration({ projectId = 0 }) {
             setProjects(await getProjectsInfo([]))
         }
         fetchData();
-    });
+    }, []);
 
 
     return (
@@ -31,7 +32,23 @@ export default function Illustration({ projectId = 0 }) {
                 <ProjectsImages grid={2} />
                 <ProjectsImages grid={3} />
             </section>
-            {projects ? <ProjectContent project={projects[projectId]} /> : null}
+            {projects[projectId]?.sections?.map((section, index) => {
+                const Component = PROJECT_BLOCK_COMPONENTS[section.__component];
+
+                if (!Component) {
+                    console.warn("Bloque no mapeado:", section.__component);
+                    return null;
+                }
+
+                // Le pasamos los datos del bloque; puedes añadir también project si lo necesitas
+                return (
+                    <Component
+                        key={section.id ?? index}
+                        block={section}
+                        project={projects[projectId]}
+                    />
+                );
+            })}
             {projectId != projects.length - 1 ? <NextProject project={projects[projectId + 1]} /> : <NextProject project={projects[0]} />}
 
         </div>
