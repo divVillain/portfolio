@@ -5,10 +5,13 @@ import Nav from "./Modules/Nav";
 import Footer from "./Modules/Footer.jsx";
 
 import Home from "./Home.jsx";
-import Illustration from "./Illustration.jsx";
+import ProjectPage from "./ProjectPage.jsx";
+import { getProjectsInfo } from "./lib/get-projects-info.js";
+import { useEffect, useState } from "react";
 
 
 function App() {
+
 
 
 
@@ -18,7 +21,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/illustration" element={<Illustration />} />
+          <Route path="/:projectSlug" element={<ProjectPage />} />
         </Routes >
       </Router>
       <Footer />

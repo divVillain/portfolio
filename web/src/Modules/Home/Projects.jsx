@@ -2,12 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import { getProjectsInfo } from "../../lib/get-projects-info.js";
+import { Link } from "react-router-dom";
 
 
 
 export default function Projects() {
 
-    const [projects, setProjects] = useState(undefined);
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -98,14 +99,15 @@ export default function Projects() {
             </div>
 
             <ul className="flex flex-col items-center h-full pt-[200px] pb-[400px]">
-                {projects != undefined || projects != undefined ?  projects.map((project, index) => {
+                {projects != [] ? projects.map((project, index) => {
                     return (
                         <li
                             ref={el => projectRefs.current[index] = el}
                             onMouseEnter={() => handleMouseEnter(index)}
                             key={index} className={`w-full relative flex flex-col items-center py-10`}>
-                            <a href="#" className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
-                                flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{project.title}</span> </a>
+
+                            <Link to={project.slug} className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
+                                flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{project.title}</span> </Link>
                             {project.project_categories != undefined ? <ul className="flex gap-4">
                                 {hoveredIndex === index ? project.project_categories.map((projectCategory, index) => {
                                     return <li className="flex gap-4" key={index} ><span className="projectAlt text-center">{projectCategory.name}</span> <span className="projectAlt default text-center">{index != project.project_categories.length - 1 ? "|" : ""}</span></li>;

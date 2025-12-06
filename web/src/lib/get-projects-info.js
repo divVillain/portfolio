@@ -8,3 +8,10 @@ export function getProjectsInfo() {
            return res.data
         })
 }
+
+export function getSingleProjectInfo(slug) {
+    return query(`projects?filters[slug][$eq]=${slug}&populate[0]=cover&populate[1]=project_categories&populate[3]=sections.images`)
+        .then(res => {
+           return res.data
+        })
+}
