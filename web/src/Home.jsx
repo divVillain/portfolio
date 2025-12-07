@@ -4,7 +4,7 @@ import Clients from "./Modules/Home/Clients.jsx";
 import About from "./Modules/Home/About.jsx";
 import AboutMe from "./Modules/Home/AboutMe.jsx";
 import { getHomeInfo } from "./lib/get-home-info.js";
-import { getProjectsInfo } from "./lib/get-projects-info.js";
+
 
 
 import { useEffect, useState } from "react";
@@ -24,7 +24,7 @@ export default function Home() {
             console.log(homeDescription);
         }
         fetchData();
-    }, []);
+    }, [homeDescription]);
 
 
     useEffect(() => {

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_project_hero_images",
+  "info": {
+    "displayName": "HeroImage"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "skill": {
+      "type": "enumeration",
+      "required": true,
+      "default": "paint",
+      "enum": [
+        "paint",
+        "design",
+        "code"
+      ]
+    }
+  },
+  "config": {}
+}

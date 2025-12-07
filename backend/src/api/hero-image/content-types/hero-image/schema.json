@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_images",
+  "info": {
+    "singularName": "hero-image",
+    "pluralName": "hero-images",
+    "displayName": "HeroImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "skill": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "default": "paint",
+      "enum": [
+        "paint",
+        "design",
+        "code"
+      ]
+    }
+  }
+}

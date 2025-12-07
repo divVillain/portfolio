@@ -1,12 +1,21 @@
 'use client';
 
 import HERODATA from "../../HERODATA.json";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, use } from "react";
+import { getCarouselInfo } from "../../lib/get-projects-info.js";
 
 export default function Hero() {
     
 
     const [cycle, setCycle] = useState(0);
+
+    useEffect(() => { 
+        const fetchData = async () => {
+            const { carousel } = await getCarouselInfo();
+            console.log(carousel);
+        }
+        fetchData();
+    }, [cycle]);
 
     useEffect(() => {
         const intervalId = setInterval(() => {

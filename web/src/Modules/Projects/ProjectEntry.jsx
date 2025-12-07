@@ -1,8 +1,8 @@
 export default function ProjectEntry({ project }) {
     return (
         <section className="w-full bg-white flex justify-center relative px-8 py-20">
-            <div className="max-w-[1631px] w-full flex justify-between">
-                <header className="flex flex-col max-w-[640px]">
+            <div className="w-full grid grid-cols-12">
+                <header className="flex flex-col col-start-1 col-span-5">
                     <h1 className="text-[2.5rem] tracking-tight">Project Entry</h1>
 
                     <ul className="flex flex-wrap gap-4">
@@ -13,8 +13,8 @@ export default function ProjectEntry({ project }) {
                         })}
                     </ul>
                 </header>
-                <article>
-                    <p className="max-w-[600px] text-[1.5rem] leading-[2rem]">
+                <article className="col-start-8 col-span-5">
+                    <p className="text-[1.5rem] leading-[2rem]">
                         {project?.projectEntryDescription}
                     </p>
                 </article>

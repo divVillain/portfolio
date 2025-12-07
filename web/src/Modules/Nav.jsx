@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 export default function Nav() {
     return (
-        <nav className="fixed w-full flex items-center justify-between p-8 top-0 left-0 z-50">
-            <div className="head-container flex items-center gap-4 text-white">
-                <span className="text-[18px]"><a href="#">Jaime González</a></span>
+        <nav className="fixed w-full flex items-center justify-between p-8 top-0 left-0 z-[90]">
+            <div className="head-container flex items-center gap-4">
+                <span className="text-[18px] mix-blend-difference text-white"><Link to="/">Jaime González</Link></span>
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="7.7836" height="7.7836" fill="white" />
                 </svg>

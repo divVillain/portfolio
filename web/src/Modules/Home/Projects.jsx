@@ -106,7 +106,7 @@ export default function Projects() {
                             onMouseEnter={() => handleMouseEnter(index)}
                             key={index} className={`w-full relative flex flex-col items-center py-10`}>
 
-                            <Link to={project.slug} className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
+                            <Link to={project?.slug} className={`project w-full  ${hoveredIndex === index ? "text-[6rem]" : "text-[5.625rem]"} leading-[8rem] font-bold tracking-tight
                                 flex  text-white ${hoveredIndex === index ? "" : "opacity-10"}`}> <span className="w-full text-center">{project.title}</span> </Link>
                             {project.project_categories != undefined ? <ul className="flex gap-4">
                                 {hoveredIndex === index ? project.project_categories.map((projectCategory, index) => {

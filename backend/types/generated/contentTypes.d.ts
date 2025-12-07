@@ -430,6 +430,80 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiHeroCarouselHeroCarousel extends Struct.SingleTypeSchema {
+  collectionName: 'hero_carousels';
+  info: {
+    displayName: 'HeroCarousel';
+    pluralName: 'hero-carousels';
+    singularName: 'hero-carousel';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    carousel: Schema.Attribute.DynamicZone<['project.carousel-cycle']>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::hero-carousel.hero-carousel'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHeroImageHeroImage extends Struct.SingleTypeSchema {
+  collectionName: 'hero_images';
+  info: {
+    displayName: 'HeroImage';
+    pluralName: 'hero-images';
+    singularName: 'hero-image';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::hero-image.hero-image'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    skill: Schema.Attribute.Enumeration<['paint', 'design', 'code']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.DefaultTo<'paint'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Struct.SingleTypeSchema {
   collectionName: 'homes';
   info: {
@@ -1056,6 +1130,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::hero-carousel.hero-carousel': ApiHeroCarouselHeroCarousel;
+      'api::hero-image.hero-image': ApiHeroImageHeroImage;
       'api::home.home': ApiHomeHome;
       'api::project-category.project-category': ApiProjectCategoryProjectCategory;
       'api::project.project': ApiProjectProject;

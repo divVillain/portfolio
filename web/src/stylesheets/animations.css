@@ -237,3 +237,37 @@
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+#project-body {
+    animation: moveUp auto linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+
+@keyframes fadeImages {
+    0% {
+        opacity: 0;
+        transform: translateY(10%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.fade-in {
+    animation: fadeImages auto linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
