@@ -21,7 +21,7 @@ export default function About({ description = 'hola' }) {
             <section id="skill-container" className="h-[100vh]">
                 <div className="flex flex-col p-40 gap-4 relative">
                     {SKILLS.map((skill, index) => (
-                        <span key={index} className="skill">{skill}</span>
+                        <span key={index} className="skill py-2">{skill}</span>
                     ))}
                 </div>
             </section>

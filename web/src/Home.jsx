@@ -19,9 +19,9 @@ export default function Home() {
     useEffect(() => {
         const fetchData = async () => {
             const { title, description, skill } = await getHomeInfo();
-            console.log(title, description, skill);
+
             sethomeDescription( description );
-            console.log(homeDescription);
+
         }
         fetchData();
     }, [homeDescription]);
