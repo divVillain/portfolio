@@ -12,15 +12,8 @@
       "required": true,
       "allowedTypes": [
         "images",
-        "files",
-        "videos"
+        "files"
       ]
-    },
-    "gridSize": {
-      "type": "integer",
-      "required": true,
-      "min": 1,
-      "max": 3
     }
   },
   "config": {}

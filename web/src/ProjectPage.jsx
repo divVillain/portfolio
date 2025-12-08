@@ -35,7 +35,7 @@ export default function ProjectPage() {
             <div id="project-body" className="flex flex-col gap-0 w-full bg-white z-50 relative">
                 {project[0] ? <ProjectEntry project={project[0]} /> : null}
 
-                <section className="py-20 bg-white">
+                <section className="py-20">
                     {project[0]?.sections?.map((section, index) => {
                         const Block = PROJECT_BLOCK_COMPONENTS[section.__component];
 
@@ -51,12 +51,11 @@ export default function ProjectPage() {
                                 block={section}
                                 project={project[0]}
                                 section={index}
-                                gridSize={section.gridSize ? section.gridSize : null}
                             />
                         );
                     })}
                 </section>
-            {nextProject >= projectContext.length ? <NextProject project={projectContext[0]} /> : <NextProject project={projectContext[nextProject]} />}
+                {nextProject >= projectContext.length ? <NextProject project={projectContext[0]} /> : <NextProject project={projectContext[nextProject]} />}
             </div>
         </section>
     )

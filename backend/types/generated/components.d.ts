@@ -44,17 +44,19 @@ export interface ProjectProjectImages extends Struct.ComponentSchema {
     icon: 'landscape';
   };
   attributes: {
-    gridSize: Schema.Attribute.Integer &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 3;
-          min: 1;
-        },
-        number
-      >;
-    images: Schema.Attribute.Media<'images' | 'files' | 'videos', true> &
+    images: Schema.Attribute.Media<'images' | 'files', true> &
       Schema.Attribute.Required;
+  };
+}
+
+export interface ProjectProjectVideos extends Struct.ComponentSchema {
+  collectionName: 'components_project_project_videos';
+  info: {
+    displayName: 'ProjectVideos';
+    icon: 'cast';
+  };
+  attributes: {
+    videos: Schema.Attribute.Media<'videos' | 'images', true>;
   };
 }
 
@@ -65,6 +67,7 @@ declare module '@strapi/strapi' {
       'project.hero-image': ProjectHeroImage;
       'project.project-description': ProjectProjectDescription;
       'project.project-images': ProjectProjectImages;
+      'project.project-videos': ProjectProjectVideos;
     }
   }
 }

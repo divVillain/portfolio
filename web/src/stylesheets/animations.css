@@ -134,7 +134,7 @@
 }
 
 .loop-group {
-    animation: scrollCarousel 20s linear infinite;
+    animation: scrollCarousel 40s linear infinite;
 }
 
 .carousel::-webkit-scrollbar {
@@ -225,10 +225,12 @@
 @keyframes showFooter {
     0% {
         transform: translateY(-50%);
+        filter: blur(40px);
     }
 
     100% {
         transform: translateY(0%);
+        filter: blur(0);
     }
 }
 
@@ -256,18 +258,70 @@
 
 @keyframes fadeImages {
     0% {
-        opacity: 0;
-        transform: translateY(10%)
+        clip-path: inset(100% 0 0 0);
+        transform: translateY(20%)
     }
 
     100% {
-        opacity: 1;
+        clip-path: inset(0 0 0 0);
         transform: translateY(0)
     }
 }
 
-.fade-in {
+.fade-in:nth-child(1) {
     animation: fadeImages auto linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
+}
+
+.fade-in:nth-child(2) {
+    animation: fadeImages auto linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 25%;
+}
+
+.fade-in:nth-child(3) {
+    animation: fadeImages auto linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(-25%);
+    }
+}
+
+.next-project {
+    clip-path: inset(10% 0 10% 0);
+}
+
+.next-project figure {
+    animation: parallax auto linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+@keyframes navAnimation {
+    0% {
+        padding-left: 32px;
+    }
+
+    100% {
+        padding-left: 64px;
+    }
+}
+
+.nav-animation {
+    animation: navAnimation auto linear both;
+    animation-timeline: scroll();
+    animation-range: 200px cover 20%;
+}
+
+.difference {
+    mix-blend-mode: difference;
 }

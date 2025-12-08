@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 
-/* *{
+*{
+  /* 
   outline: 1px solid pink;
-} */
+  */
+  text-wrap: pretty;
+} 
 
 body {
   background-color: rgb(25, 25, 25);
 }
 
-img {
-  filter: brightness(0.8);
-}
 
 body {
   overflow-x: hidden;

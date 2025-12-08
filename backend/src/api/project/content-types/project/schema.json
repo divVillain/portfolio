@@ -26,16 +26,6 @@
         "videos"
       ]
     },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
     "projectEntryName": {
       "type": "string",
       "required": true,
@@ -50,10 +40,6 @@
       "targetField": "title",
       "required": true
     },
-    "projectDescription": {
-      "type": "text",
-      "required": false
-    },
     "project_categories": {
       "type": "relation",
       "relation": "oneToMany",
@@ -63,8 +49,15 @@
       "type": "dynamiczone",
       "components": [
         "project.project-images",
-        "project.project-description"
+        "project.project-description",
+        "project.project-videos"
       ]
+    },
+    "projectUrl": {
+      "type": "string"
+    },
+    "madeInProdigioso": {
+      "type": "boolean"
     }
   }
 }

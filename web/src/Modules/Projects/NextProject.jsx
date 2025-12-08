@@ -1,16 +1,27 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NextProject({ project }) {
     return (
         <>
-        <section className="w-full h-[80vh] relative">
-            <figure className="h-full relative z-1">
-                <img src={`http://localhost:1337${project?.cover?.url}`} className="object-cover h-full w-full brightness-50 absolute z-0" alt="nexus" />
-            </figure>
-            <Link to={`/${project?.slug}`} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-[92px] font-[700] tracking-[-3px] text-center z-10">
-                {project?.title}
-            </Link>
-        </section>
+            <section className="next-project w-full relative h-[75vh]">
+                <figure className="h-[100vh]"
+                style={{
+                    backgroundImage: `url(${`http://localhost:1337${project?.cover?.url}`})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'bottom center',
+                    backgroundAttachment: 'fixed',
+                }}>
+
+                </figure>
+                
+
+                <article className="absolute top-[50%] left-0 translate-y-[-50%] flex justify-between items-center text-white w-full p-10">
+                    <span className="text-[2.5rem]">Related project</span>
+                    <Link to={`/${project?.slug}`} className="text-[5rem]  tracking-[-3px] text-center z-10">
+                        {project?.title}
+                    </Link>
+                </article>
+            </section>
         </>
     )
 }

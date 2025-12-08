@@ -1,8 +1,14 @@
-GET http://localhost:1337/api/projects?populate=*
+GET http://localhost:1337/api/hero-carousel?populate[0]=carousel.paint.image&populate[1]=carousel.design.image&populate[2]=carousel.code.image
 Authorization: Bearer 301d01822a0c3c5b92928be8c52d68c85a75644156a101a54f0ab2ad4abab3f4ee6d613f1f5f54a3bb897841870d1eb92857bf5c5ad5b11919a366cd5324d8ceb2a87ec521700f0930b89bffe5a2463d95490793aeed2465ee37a67ccc79a3dd67cabab679d3591162bc3ec27f2cb87f397fa0c48f464a5f935a558b910378a5
 
 ################
 ################
 
-GET http://localhost:1337/api/projects?filters[slug][$eq]=illustration&populate[0]=cover&populate[1]=project_categories&populate[3]=sections.images
+GET http://localhost:1337/api/projects?filters[slug][$eq]=nexus-project&populate[0]=cover&populate[1]=project_categories&populate[3]=sections.images&populate[4]=sections.videos
+Authorization: Bearer 301d01822a0c3c5b92928be8c52d68c85a75644156a101a54f0ab2ad4abab3f4ee6d613f1f5f54a3bb897841870d1eb92857bf5c5ad5b11919a366cd5324d8ceb2a87ec521700f0930b89bffe5a2463d95490793aeed2465ee37a67ccc79a3dd67cabab679d3591162bc3ec27f2cb87f397fa0c48f464a5f935a558b910378a5
+
+################
+################
+
+GET http://localhost:1337/api/clients?populate[0]=logo
 Authorization: Bearer 301d01822a0c3c5b92928be8c52d68c85a75644156a101a54f0ab2ad4abab3f4ee6d613f1f5f54a3bb897841870d1eb92857bf5c5ad5b11919a366cd5324d8ceb2a87ec521700f0930b89bffe5a2463d95490793aeed2465ee37a67ccc79a3dd67cabab679d3591162bc3ec27f2cb87f397fa0c48f464a5f935a558b910378a5
