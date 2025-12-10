@@ -58,6 +58,10 @@
     },
     "madeInProdigioso": {
       "type": "boolean"
+    },
+    "videoCover": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

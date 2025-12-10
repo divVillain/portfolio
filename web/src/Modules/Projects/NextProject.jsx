@@ -5,15 +5,21 @@ export default function NextProject({ project }) {
         <>
             <section className="next-project w-full relative h-[75vh]">
                 <figure className="h-[100vh]"
-                style={{
-                    backgroundImage: `url(${`http://localhost:1337${project?.cover?.url}`})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'bottom center',
-                    backgroundAttachment: 'fixed',
-                }}>
-
+                    style={{
+                        backgroundImage: `${!project?.videoCover ? `url(${`http://localhost:1337${project?.cover?.url}`})` : null}`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'bottom center',
+                        backgroundAttachment: 'fixed',
+                    }}>
+                    {project?.videoCover ?
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            src={`http://localhost:1337${project?.cover?.url}`}
+                        /> : null}
                 </figure>
-                
+
 
                 <article className="absolute top-[50%] left-0 translate-y-[-35%] flex justify-between items-center text-white w-full p-10">
                     <span className="text-[2.5rem]">Related project</span>

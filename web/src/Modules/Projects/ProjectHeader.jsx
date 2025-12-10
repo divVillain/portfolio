@@ -1,18 +1,22 @@
-export default function ProjectHeader({ project, madeInProdigioso }) {
+export default function ProjectHeader({ project }) {
     return (
         <header className="w-full h-[90vh] flex items-end justify-between p-8 relative">
 
             <img
                 src={`http://localhost:1337${project?.cover?.url}`}
-                className="w-full h-full object-cover absolute top-0 left-0 z-0" />
+                className="w-full h-full object-cover absolute top-0 left-0 z-0"
+            />
             <video
                 autoPlay
                 loop
                 muted
                 src={`http://localhost:1337${project?.cover?.url}`}
-                className="w-full h-full object-cover absolute top-0 left-0 z-0" />
-
+                className="w-full h-full object-cover absolute top-0 left-0 z-0"
+            />
+            <div className="flex gap-4 items-end">
             <h1 className="text-white text-[5.625rem] tracking-tight leading-[100%] relative z-10">{project?.title}</h1>
+            {project?.projectUrl ? <span className="text-gray-400 z-10 text-[20px]">|<a href={project?.projectUrl} target="blank" className="link-button pl-4">Visit project</a></span> : null }
+            </div>
             {project.madeInProdigioso ? <figure className="z-50">
                 <svg height="64" viewBox="0 0 150 233" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M34.0474 113.9C19.6474 113.8 8.14743 102 8.24743 87.6C8.34743 73.4 19.8474 61.9 34.1474 61.8H34.2474C48.4474 62 59.9474 73.7 59.7474 87.9V97.1C59.7474 99.6 57.6474 101.7 55.1474 101.7C52.6474 101.7 50.5474 99.7 50.5474 97.1V87.9C50.6474 78.7 43.3474 71.1 34.1474 71C24.8474 71.1 17.3474 78.7 17.4474 88C17.5474 97.2 24.9474 104.6 34.1474 104.7C36.6474 104.7 38.7474 106.8 38.7474 109.3C38.6474 111.9 36.6474 113.9 34.0474 113.9Z" fill="white" />

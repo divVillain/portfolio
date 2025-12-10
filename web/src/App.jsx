@@ -6,6 +6,8 @@ import Footer from "./Modules/Footer.jsx";
 
 import Home from "./Home.jsx";
 import ProjectPage from "./ProjectPage.jsx";
+import Mobile from "./Mobile.jsx"; 
+
 import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -21,21 +23,27 @@ const Wrapper = ({ children }) => {
   return children;
 };
 
+const isMobile = window.innerWidth < 768;
+console.log(isMobile);
+
 function App() {
 
   return (
     <>
-
-      <Router>
-        <Wrapper>
-          <Nav />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/:projectSlug" element={<ProjectPage />} />
-          </Routes >
-        </Wrapper>
-      </Router>
-      <Footer />
+      {!isMobile ? <>
+        <Router>
+          <Wrapper>
+            <Nav />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/:projectSlug" element={<ProjectPage />} />
+            </Routes >
+          </Wrapper>
+        </Router>
+        <Footer />
+      </> :
+        <Mobile />
+      }
     </>
   );
 }
