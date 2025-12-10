@@ -26,7 +26,7 @@ export default function ProjectEntry({ project, madeInProdigioso }) {
                     <p className="text-[1.5rem] leading-[2rem] text-gray-700">
                         {project?.projectEntryDescription}
                     </p>
-                    {madeInProdigioso ? <span className="text-gray-500">Project made by Prodigioso Volcán</span> : null}
+                    {project.madeInProdigioso ? <p className="text-gray-500">Project made by <span className="text-gray-600 font-[700]">Prodigioso Volcán</span> </p> : null}
                 </article>
 
 

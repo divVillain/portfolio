@@ -15,7 +15,7 @@ export default function NextProject({ project }) {
                 </figure>
                 
 
-                <article className="absolute top-[50%] left-0 translate-y-[-50%] flex justify-between items-center text-white w-full p-10">
+                <article className="absolute top-[50%] left-0 translate-y-[-35%] flex justify-between items-center text-white w-full p-10">
                     <span className="text-[2.5rem]">Related project</span>
                     <Link to={`/${project?.slug}`} className="text-[5rem]  tracking-[-3px] text-center z-10">
                         {project?.title}

@@ -14,7 +14,7 @@ export default function About({ description = 'hola' }) {
                     <p className="text-pretty text-[52px] text-white font-bold leading-[120%] max-w-[1100px]">
                         {description}
                     </p>
-                    <span className="text-[#C9C9C9]">Currently working as Product Designer in <a href="#" className="font-bold text-white">Prodigioso Volcán</a></span>
+                    <span className="text-[#C9C9C9]">Currently working as Product Designer in <a href="https://www.prodigiosovolcan.com/" target="blank" className="font-bold text-white">Prodigioso Volcán</a></span>
                 </article>
             </section>
 
