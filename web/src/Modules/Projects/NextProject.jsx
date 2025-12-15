@@ -6,7 +6,7 @@ export default function NextProject({ project }) {
             <section className="next-project w-full relative h-[75vh]">
                 <figure className="h-[100vh]"
                     style={{
-                        backgroundImage: `${!project?.videoCover ? `url(${`http://localhost:1337${project?.cover?.url}`})` : null}`,
+                        backgroundImage: `${!project?.videoCover ? `url(${`${project?.cover?.url}`})` : null}`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'bottom center',
                         backgroundAttachment: 'fixed',
@@ -16,7 +16,7 @@ export default function NextProject({ project }) {
                             autoPlay
                             loop
                             muted
-                            src={`http://localhost:1337${project?.cover?.url}`}
+                            src={`${project?.cover?.url}`}
                         /> : null}
                 </figure>
 

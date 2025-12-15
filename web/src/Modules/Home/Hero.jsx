@@ -101,18 +101,18 @@ export default function Hero() {
                     <div
 
                         className={`img-bg w-full h-full absolute top-0 left-0`}
-                        style={{ "--delay": `${0}s`, backgroundImage: `url(http://localhost:1337${paint.image.url})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}>
+                        style={{ "--delay": `${0}s`, backgroundImage: `url(${paint.image.url})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}>
                     </div>
 
                     <div
 
                         className={`img-bg w-full h-full absolute top-0 left-0`}
-                        style={{ "--delay": `${2.5}s`, backgroundImage: `url(http://localhost:1337${design.image.url})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}>
+                        style={{ "--delay": `${2.5}s`, backgroundImage: `url(${design.image.url})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}>
                     </div>
                     <div
 
                         className={`img-bg w-full h-full absolute top-0 left-0`}
-                        style={{ "--delay": `${2 * 2.5}s`, backgroundImage: `url(http://localhost:1337${code.image.url})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}>
+                        style={{ "--delay": `${2 * 2.5}s`, backgroundImage: `url(${code.image.url})`, backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(.1) grayscale(1)" }}>
                     </div>
                 </figure>
 
@@ -128,7 +128,7 @@ export default function Hero() {
 
                         <img
 
-                            src={`http://localhost:1337${paint.image.url}`}
+                            src={`${paint.image.url}`}
                             className="h-[500px] w-[750px] object-cover"
                         />
 
@@ -141,7 +141,7 @@ export default function Hero() {
 
                         <img
 
-                            src={`http://localhost:1337${design.image.url}`}
+                            src={`${design.image.url}`}
                             className="h-[500px] w-[750px] object-cover"
                         />
 
@@ -155,7 +155,7 @@ export default function Hero() {
 
                         <img
 
-                            src={`http://localhost:1337${code.image.url}`}
+                            src={`${code.image.url}`}
                             className="h-[500px] w-[750px] object-cover"
                         />
 

@@ -21,7 +21,7 @@ export default function Clients() {
                 {clients.map((client, index) => (
                     <figure key={index} className="p-4 flex-shrink-0 items-center h-full">
                         <img
-                            src={`http://localhost:1337${client.logo.url}`}
+                            src={`${client.logo.url}`}
                             alt={client.name}
                             className="pr-10 border-r-[1px] border-gray-700 h-full w-auto"
                         />
@@ -32,7 +32,7 @@ export default function Clients() {
                 {clients.map((client, index) => (
                     <figure key={index} className="p-4 flex-shrink-0 items-center h-full">
                         <img
-                            src={`http://localhost:1337${client.logo.url}`}
+                            src={`${client.logo.url}`}
                             alt={client.name}
                             className="pr-10 border-r-[1px] border-gray-700 h-full w-auto"
                         />

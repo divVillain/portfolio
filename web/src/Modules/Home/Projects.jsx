@@ -100,7 +100,7 @@ export default function Projects() {
                 className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-opacity duration-500 ease-in-out pointer-events-none ${isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
                     }`}
                 style={{
-                    backgroundImage: displayedIndex !== null ? `url(${`http://localhost:1337${projects[displayedIndex]?.cover?.url}`})` : '',
+                    backgroundImage: displayedIndex !== null ? `url(${`${projects[displayedIndex]?.cover?.url}`})` : '',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     filter: `brightness(${brightness})`,
@@ -113,7 +113,7 @@ export default function Projects() {
                 autoPlay
                 loop
                 muted
-                src={`http://localhost:1337${projects[displayedIndex]?.cover?.url}`}
+                src={`${projects[displayedIndex]?.cover?.url}`}
                 className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-all duration-500 ease-in-out pointer-events-none ${isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
                     }`}
                 style={{

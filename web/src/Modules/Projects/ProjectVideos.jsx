@@ -8,7 +8,7 @@ export default function Projectsvideos({ project, section }) {
                             autoPlay
                             loop
                             muted
-                            src={`http://localhost:1337${project?.sections[section]?.videos[0].url}`}                            
+                            src={`${project?.sections[section]?.videos[0].url}`}                            
                             className="fade-in w-full aspect-[16/9] object-cover rounded-lg" />
                     </figure>
                     : null}
@@ -21,7 +21,7 @@ export default function Projectsvideos({ project, section }) {
                                 loop
                                 muted
                                 key={index}
-                                src={`http://localhost:1337${image.url}`}                                
+                                src={`${image.url}`}                                
                                 className="fade-in object-cover rounded-lg col-span-6 w-full row-span-full h-full" />
                         })}
                     </figure>
@@ -36,7 +36,7 @@ export default function Projectsvideos({ project, section }) {
                                 loop
                                 muted
                                 key={index}
-                                src={`http://localhost:1337${image.url}`}                                
+                                src={`${image.url}`}                                
                                 className="fade-in object-cover rounded-lg col-span-4 w-full row-span-full h-full" />
                         })}
                     </figure>

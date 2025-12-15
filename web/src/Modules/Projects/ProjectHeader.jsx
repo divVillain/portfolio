@@ -3,14 +3,14 @@ export default function ProjectHeader({ project }) {
         <header className="w-full h-[90vh] flex items-end justify-between p-8 relative">
 
             <img
-                src={`http://localhost:1337${project?.cover?.url}`}
+                src={`${project?.cover?.url}`}
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
             />
             <video
                 autoPlay
                 loop
                 muted
-                src={`http://localhost:1337${project?.cover?.url}`}
+                src={`${project?.cover?.url}`}
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
             />
             <div className="flex gap-4 items-end">
