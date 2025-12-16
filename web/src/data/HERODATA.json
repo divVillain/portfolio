@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "skill": "paint",
+      "image": "170623_COLOR_EJ05_05_JM.webp"
+    },
+    {
+      "skill": "design",
+      "image": "sinfonia-cover.webp"
+    },
+    {
+      "skill": "code",
+      "image": "bbva-cover.png"
+    }
+  ],
+  [
+    {
+      "skill": "paint",
+      "image": "forgotten creation_4.webp"
+    },
+    {
+      "skill": "design",
+      "image": "colin-1.jpg"
+    },
+    {
+      "skill": "code",
+      "image": "nexus-3.jpg"
+    }
+  ],
+  [
+    {
+      "skill": "paint",
+      "image": "sinfonia-2.jpg"
+    },
+    {
+      "skill": "design",
+      "image": "jaime-moran-grizzly-final.jpg"
+    },
+    {
+      "skill": "code",
+      "image": "sinfonia-4.jpg"
+    }
+  ]
+]
