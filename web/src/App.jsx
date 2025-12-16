@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/next"
 
 
 import Nav from "./Modules/Nav.jsx";
@@ -34,6 +35,7 @@ function App() {
         <Router>
           <Wrapper>
             <Nav />
+            <Analytics />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/:projectSlug" element={<ProjectPage />} />
