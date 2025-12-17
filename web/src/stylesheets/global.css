@@ -20,6 +20,6 @@ body {
 }
 
 .link-button:hover {
-  color: white;
   transition: all 0.3s ease-in-out;
+  background-color: rgb(230, 230, 230);
 }

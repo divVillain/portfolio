@@ -1,6 +1,7 @@
 import ProjectHeader from "./Modules/Projects/ProjectHeader.jsx";
 import ProjectEntry from "./Modules/Projects/ProjectEntry.jsx";
 import NextProject from "./Modules/Projects/NextProject.jsx";
+import PROJECTS from "./PROJECTS.json";
 
 
 
@@ -14,29 +15,31 @@ import { PROJECT_BLOCK_COMPONENTS } from "./Modules/Projects/ProjectBlockMap.js"
 
 export default function ProjectPage() {
 
+    /*
     const [project, setProjects] = useState([]);
-    const [projectContext, setProjectContext] = useState([]);
+    const [projectContext, setProjectContext] = useState([]); */
     const pageId = useParams()
 
-    useEffect(() => {
+  /*  useEffect(() => {
         const fetchProject = async () => {
             setProjects(await getSingleProjectInfo(pageId.projectSlug));
             setProjectContext(await getProjectsInfo());
         }
         fetchProject();
-    }, [pageId.projectSlug]);
+    }, [pageId.projectSlug]); */
 
-    const nextProject = projectContext.findIndex(project => project.slug === pageId.projectSlug) + 1;
+    const currentProject = PROJECTS.findIndex(project => project.slug === pageId.projectSlug);
+    const nextProject = PROJECTS.findIndex(project => project.slug === pageId.projectSlug) + 1;
 
 
     return (
         <section className="mb-[-250px]">
-            {project[0] ? <ProjectHeader project={project[0]} /> : null}
+            {PROJECTS[currentProject] ? <ProjectHeader project={PROJECTS[currentProject]} /> : null}
             <div id="project-body" className="flex flex-col gap-0 w-full bg-white z-50 relative">
-                {project[0] ? <ProjectEntry project={project[0]} /> : null}
+                {PROJECTS[currentProject] ? <ProjectEntry project={PROJECTS[currentProject]} /> : null}
 
                 <section className="py-20">
-                    {project[0]?.sections?.map((section, index) => {
+                    {PROJECTS[currentProject]?.sections?.map((section, index) => {
                         const Block = PROJECT_BLOCK_COMPONENTS[section.__component];
 
                         if (!Block) {
@@ -49,13 +52,13 @@ export default function ProjectPage() {
                             <Block
                                 key={section.id ?? index}
                                 block={section}
-                                project={project[0]}
+                                project={PROJECTS[currentProject]}
                                 section={index}
                             />
                         );
                     })}
                 </section>
-                {nextProject >= projectContext.length ? <NextProject project={projectContext[0]} /> : <NextProject project={projectContext[nextProject]} />}
+                {nextProject >= PROJECTS.length ? <NextProject project={PROJECTS[0]} /> : <NextProject project={PROJECTS[nextProject]} />}
             </div>
         </section>
     )

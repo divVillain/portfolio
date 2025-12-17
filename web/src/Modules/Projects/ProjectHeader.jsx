@@ -13,9 +13,9 @@ export default function ProjectHeader({ project }) {
                 src={`${project?.cover?.url}`}
                 className="w-full h-full object-cover absolute top-0 left-0 z-0"
             />
-            <div className="flex gap-4 items-end">
+            <div className="flex gap-8 items-end">
             <h1 className="text-white text-[5.625rem] tracking-tight leading-[100%] relative z-10">{project?.title}</h1>
-            {project?.projectUrl ? <span className="text-gray-400 z-10 text-[20px]">|<a href={project?.projectUrl} target="blank" className="link-button pl-4">Visit project</a></span> : null }
+            {project?.projectUrl ? <a href={project?.projectUrl} target="blank" className="font-bold link-button pl-4 px-4 py-2 text-gray-800 bg-white z-50 translate-y-[-8px] rounded-lg">Visit project</a> : null }
             </div>
             {project.madeInProdigioso ? <figure className="z-50">
                 <svg height="64" viewBox="0 0 150 233" fill="none" xmlns="http://www.w3.org/2000/svg">

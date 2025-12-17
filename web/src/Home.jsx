@@ -3,28 +3,13 @@ import Projects from "./Modules/Home/Projects.jsx";
 import Clients from "./Modules/Home/Clients.jsx";
 import About from "./Modules/Home/About.jsx";
 import AboutMe from "./Modules/Home/AboutMe.jsx";
-import { getHomeInfo } from "./lib/get-home-info.js";
+import { useEffect } from "react";
 
-
-
-import { useEffect, useState } from "react";
 
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
-
-    const [homeDescription, sethomeDescription] = useState('hola');
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const { title, description, skill } = await getHomeInfo();
-
-            sethomeDescription( description );
-
-        }
-        fetchData();
-    }, [homeDescription]);
 
 
     useEffect(() => {
@@ -81,7 +66,7 @@ export default function Home() {
     return (
         <div className="bg-[#191919] z-50">
             <Hero />
-            <AboutMe description={homeDescription} />
+            <AboutMe />
             <Clients />
             <Projects />
 

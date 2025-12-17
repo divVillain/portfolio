@@ -3,21 +3,23 @@
 import { useEffect, useRef, useState } from "react";
 import { getProjectsInfo } from "../../lib/get-projects-info.js";
 import { Link } from "react-router-dom";
-
-
+import PROJECTS from "../../PROJECTS.json";
 
 export default function Projects() {
 
-    const [projects, setProjects] = useState([]);
-    const [projectsHeight, setProjectsHeight] = useState(0);
+   /* const[projects, setProjects] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            setProjects(await getProjectsInfo([]))
-            setProjectsHeight(projects?.length * 1000);
-        }
-        fetchData();
-    }, [projects]);
+        let cancelled = false;
+
+        (async () => {
+            const data = await getProjectsInfo();
+            if (!cancelled) setProjects(data);
+        })();
+
+        return () => { cancelled = true; };
+    }, []); // 👈 importante: sin projects aquí */
+
 
 
     const [brightness, setBrightness] = useState(0.8);
@@ -100,7 +102,7 @@ export default function Projects() {
                 className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-opacity duration-500 ease-in-out pointer-events-none ${isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
                     }`}
                 style={{
-                    backgroundImage: displayedIndex !== null ? `url(${`${projects[displayedIndex]?.cover?.url}`})` : '',
+                    backgroundImage: displayedIndex !== null ? `url(${`${PROJECTS[displayedIndex]?.cover?.url}`})` : '',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     filter: `brightness(${brightness})`,
@@ -113,7 +115,7 @@ export default function Projects() {
                 autoPlay
                 loop
                 muted
-                src={`${projects[displayedIndex]?.cover?.url}`}
+                src={`${PROJECTS[displayedIndex]?.cover?.url}`}
                 className={`pin-bg w-full h-[100vh] fixed top-0 left-0 transition-all duration-500 ease-in-out pointer-events-none ${isFadingOut ? 'animate-fade-out' : displayedIndex !== null && !isFadingOut ? 'animate-scale-in' : ''
                     }`}
                 style={{
@@ -125,7 +127,7 @@ export default function Projects() {
             </video>
 
             <ul className="flex flex-col items-center h-full pt-[200px] pb-[400px]">
-                {projects != [] ? projects.map((project, index) => {
+                {PROJECTS != [] ? PROJECTS.map((project, index) => {
                     return (
                         <li
                             ref={el => projectRefs.current[index] = el}

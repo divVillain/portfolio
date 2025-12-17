@@ -1,38 +1,1432 @@
 [
-    {
-      "name": "Illustration",
-      "cover": "bg-illustration.png",
-      "keys": ["Character Design", "Concept Art", "Cover Art"]
+  {
+    "id": 74,
+    "documentId": "yua1cxmacnylhkoa36fu791r",
+    "title": "Nexus Project",
+    "projectEntryName": "Experimental Typography Footprint Generator",
+    "projectEntryDescription": "Nexus studies interpersonal relationships and human connections, and proposes a graphic approach to categorizing them through symbols or traces that capture everything that makes them unique. Nexus generates a framework for parameterizing our relationships, providing a visual response, abstract symbols, or \"footprints\" due to their uniqueness, like a fingerprint, which is unique to each individual. This footprint takes into account the phases a relationship.\nhas gone through, the feelings experienced in each one, and\nthe order in which they were experienced.",
+    "slug": "nexus-project",
+    "createdAt": "2025-12-07T21:44:23.673Z",
+    "updatedAt": "2025-12-10T19:38:47.792Z",
+    "publishedAt": "2025-12-10T19:38:47.801Z",
+    "projectUrl": "https://thisisnexus.art/",
+    "madeInProdigioso": null,
+    "videoCover": true,
+    "cover": {
+      "id": 30,
+      "documentId": "hrs1shhdb1ofjwd3vbzxpk5g",
+      "name": "nexus_video_opt.mp4",
+      "alternativeText": null,
+      "caption": null,
+      "width": null,
+      "height": null,
+      "formats": null,
+      "hash": "nexus_video_opt_a2a782fd9b",
+      "ext": ".mp4",
+      "mime": "video/mp4",
+      "size": 6571.93,
+      "url": "/projects/nexus/nexus_video_opt.mp4",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-08T11:03:05.294Z",
+      "updatedAt": "2025-12-08T11:03:05.294Z",
+      "publishedAt": "2025-12-08T11:03:05.294Z"
     },
-    {
-      "name": "Demócrata",
-      "cover": "code.png",
-      "keys": ["Digital Newspaper", "Product Design", "Design System"]
+    "project_categories": [
+      {
+        "id": 20,
+        "documentId": "ue4w57ucz1j2n2tf28usuwqk",
+        "name": "Experimental Typhography",
+        "slug": "experimental-typhography",
+        "createdAt": "2025-12-08T10:25:42.263Z",
+        "updatedAt": "2025-12-08T10:25:42.263Z",
+        "publishedAt": "2025-12-08T10:25:42.269Z",
+        "locale": "en"
+      },
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Branding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      },
+      {
+        "id": 4,
+        "documentId": "hzbhtuvdcqtnnwd7yon1xay9",
+        "name": "Product Design",
+        "slug": "product-design",
+        "createdAt": "2025-12-03T10:58:55.804Z",
+        "updatedAt": "2025-12-03T10:58:55.804Z",
+        "publishedAt": "2025-12-03T10:58:55.811Z",
+        "locale": "en"
+      },
+      {
+        "id": 12,
+        "documentId": "gzofh4o26e9jqqzktantvi8t",
+        "name": "Scrollytelling",
+        "slug": "scrollytelling",
+        "createdAt": "2025-12-07T21:30:27.331Z",
+        "updatedAt": "2025-12-07T21:30:27.331Z",
+        "publishedAt": "2025-12-07T21:30:27.335Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 147,
+        "images": [
+          {
+            "id": 12,
+            "documentId": "k8bakllv7cui55fjrlzeiuwx",
+            "name": "nexus.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "nexus_1a1d4f819d",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 460.09,
+            "url": "/projects/nexus/nexus-1.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-04T19:40:15.159Z",
+            "updatedAt": "2025-12-04T19:40:15.159Z",
+            "publishedAt": "2025-12-04T19:40:15.159Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-videos",
+        "id": 21,
+        "videos": [
+          {
+            "id": 31,
+            "documentId": "ph7hcpu6ew6ob9q6d5lr5y8h",
+            "name": "nexus-1.mp4",
+            "alternativeText": null,
+            "caption": null,
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "nexus_1_9b1ed07b74",
+            "ext": ".mp4",
+            "mime": "video/mp4",
+            "size": 1504.9,
+            "url": "/projects/nexus/nexus-1.mp4",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-08T11:48:36.812Z",
+            "updatedAt": "2025-12-08T11:48:36.812Z",
+            "publishedAt": "2025-12-08T11:48:36.812Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 148,
+        "images": [
+          {
+            "id": 32,
+            "documentId": "olrtouxs1ngkcjzue8eqasw7",
+            "name": "nexus_1920x1080.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1920,
+            "height": 1080,
+            "hash": "nexus_1920x1080_a6a9f26f63",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 338.28,
+            "url": "/projects/nexus/nexus-3.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-08T12:22:28.389Z",
+            "updatedAt": "2025-12-08T12:22:28.389Z",
+            "publishedAt": "2025-12-08T12:22:28.390Z"
+          },
+          {
+            "id": 33,
+            "documentId": "felqrqd94jqrr7pc8m7g6683",
+            "name": "nexus-2.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 4274,
+            "height": 2616,
+            "hash": "nexus_2_35e1bad9a9",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 535.49,
+            "url": "/projects/nexus/nexus_1920x1080.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-08T12:22:28.493Z",
+            "updatedAt": "2025-12-08T12:22:28.493Z",
+            "publishedAt": "2025-12-08T12:22:28.494Z"
+          },
+          {
+            "id": 34,
+            "documentId": "hzumhwvqlkr0290bpncsk7uz",
+            "name": "nexus-3.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 5098,
+            "height": 3824,
+            "hash": "nexus_3_ba8808192a",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 1954.6,
+            "url": "/projects/nexus/nexus-2.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-08T12:22:28.651Z",
+            "updatedAt": "2025-12-08T12:22:28.651Z",
+            "publishedAt": "2025-12-08T12:22:28.651Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 75,
+        "text": "Nexus proposes a grid of footprints that makes it possible to understand the history of a personal relationship and how it has transformed according to the spatial positions occupied within personal space. This grid is the constructive foundation on which the typography’s glyphs have been developed, based on Hall’s model.\n\nWith this in mind, a typeface has been created that associates each glyph with one of the stages a relationship can go through, giving each stage three possible interpretations: positive, neutral, or negative—since the goal is to capture the real sensations present in each phase of the process. This results in a total of 30 glyphs. Graphically, the intention has been to represent the presence or absence of contact in each stage through the spatial categorization in Hall’s model. In this way, a “positive” stage of “bond” will show a solid and unified form, whereas a “negative” stage of “termination” will display chaotic and fragmented shapes."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "documentId": "hprm2kqj5bjx14uefwcn508o",
+    "title": "The Other Spain",
+    "projectEntryName": "Tour Booking E-Commerce",
+    "projectEntryDescription": "The Other Spain was born in 2013 as an inbound travel agency specialized in revealing a different side of Spain. Their aim was to move away from conventional tourism and open the doors of the country’s inland and northern regions to a more demanding travellers in search of more authentic experiences.\n\nFrom the beginning they focused on crafting tailor-made routes offering a unique perspective: UNESCO-listed cities, breathtaking natural landscapes, and living traditions—far from the typical sun-and-beach holiday.",
+    "slug": "the-other-spain",
+    "createdAt": "2025-12-07T21:28:32.027Z",
+    "updatedAt": "2025-12-10T18:54:39.586Z",
+    "publishedAt": "2025-12-10T18:54:39.594Z",
+    "projectUrl": "https://theotherspaintours.com/",
+    "madeInProdigioso": true,
+    "videoCover": null,
+    "cover": {
+      "id": 97,
+      "documentId": "kaqz3ukn592hgekfayb9gmmr",
+      "name": "tos-1.webp",
+      "alternativeText": null,
+      "caption": null,
+      "width": 2000,
+      "height": 1333,
+      "hash": "tos_1_67a450ab1e",
+      "ext": ".webp",
+      "mime": "image/webp",
+      "size": 126.29,
+      "url": "/projects/the-other-spain/tos-1.webp",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-10T18:37:26.741Z",
+      "updatedAt": "2025-12-10T18:37:26.741Z",
+      "publishedAt": "2025-12-10T18:37:26.741Z"
     },
-    {
-      "name": "Colin Powell School",
-      "cover": "design.png",
-      "keys": ["University Website", "Product Design", "Design System"]
+    "project_categories": [
+      {
+        "id": 4,
+        "documentId": "hzbhtuvdcqtnnwd7yon1xay9",
+        "name": "Product Design",
+        "slug": "product-design",
+        "createdAt": "2025-12-03T10:58:55.804Z",
+        "updatedAt": "2025-12-03T10:58:55.804Z",
+        "publishedAt": "2025-12-03T10:58:55.811Z",
+        "locale": "en"
+      },
+      {
+        "id": 6,
+        "documentId": "wwb3iy6vpauj4npvzi6f2xo1",
+        "name": "E-Commerce",
+        "slug": "e-commerce",
+        "createdAt": "2025-12-07T21:27:53.689Z",
+        "updatedAt": "2025-12-07T21:27:53.689Z",
+        "publishedAt": "2025-12-07T21:27:53.695Z",
+        "locale": "en"
+      },
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Branding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 132,
+        "images": [
+          {
+            "id": 100,
+            "documentId": "m5vif75jonef9vx0sbnu3dah",
+            "name": "tos-2.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 5000,
+            "height": 3333,
+            "hash": "tos_2_91ab7523df",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 646.26,
+            "url": "/projects/the-other-spain/tos-2.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:37:27.662Z",
+            "updatedAt": "2025-12-10T18:37:27.662Z",
+            "publishedAt": "2025-12-10T18:37:27.662Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 133,
+        "images": [
+          {
+            "id": 99,
+            "documentId": "zs2odovjy725s3s4jq7f2ox7",
+            "name": "tos-4.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 3000,
+            "height": 2000,
+            "hash": "tos_4_34fcba8e13",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 86.54,
+            "url": "/projects/the-other-spain/tos-4.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:37:26.904Z",
+            "updatedAt": "2025-12-10T18:37:26.904Z",
+            "publishedAt": "2025-12-10T18:37:26.904Z"
+          },
+          {
+            "id": 98,
+            "documentId": "zvrq1ug6ufjq02awrwqkr14p",
+            "name": "tos-3.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1429,
+            "hash": "tos_3_7833fb6b21",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 302.49,
+            "url": "/projects/the-other-spain/tos-3.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:37:26.901Z",
+            "updatedAt": "2025-12-10T18:37:26.901Z",
+            "publishedAt": "2025-12-10T18:37:26.901Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-videos",
+        "id": 20,
+        "videos": [
+          {
+            "id": 101,
+            "documentId": "gnuid4xohqcrhdt8iceqgykk",
+            "name": "tos-5.mp4",
+            "alternativeText": null,
+            "caption": null,
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "tos_5_4cd6a2ed66",
+            "ext": ".mp4",
+            "mime": "video/mp4",
+            "size": 8398.66,
+            "url": "/projects/the-other-spain/tos-5.mp4",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:51:43.978Z",
+            "updatedAt": "2025-12-10T18:54:19.717Z",
+            "publishedAt": "2025-12-10T18:51:43.978Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 134,
+        "images": [
+          {
+            "id": 103,
+            "documentId": "d79i92gjubrknzl3m4ee9bxu",
+            "name": "tos-6.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1334,
+            "hash": "tos_6_8b006e3f82",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 321.98,
+            "url": "/projects/the-other-spain/tos-6.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:53:59.237Z",
+            "updatedAt": "2025-12-10T18:53:59.237Z",
+            "publishedAt": "2025-12-10T18:53:59.237Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 71,
+        "text": "The Other Spain is an e-commerce specializing in luxury tours and in this project I was tasked with giving the brand a new look so that it exuded an exclusive and elegant yet accessible feel I also helped conceptualize the UX prototypes and designed the purchase flow and an interactive map for selecting tours including the entire visual part of the website and the design system."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "documentId": "l68a0sj90ced6ycgmw6wcey0",
+    "title": "BBVA Suiza",
+    "projectEntryName": "Investing in the mirror",
+    "projectEntryDescription": "Facing the Mirror Investment is a scrollytelling piece for BBVA Switzerland that narrates how to confront fears and emotions when investing, aided by graphic elements that reinforce and explain the narrative in detail and in this project I was responsible for the design of several modules the development of the animations and the responsive adaptation.",
+    "slug": "bbva-suiza",
+    "createdAt": "2025-12-07T21:31:35.806Z",
+    "updatedAt": "2025-12-09T21:18:40.013Z",
+    "publishedAt": "2025-12-09T21:18:40.020Z",
+    "projectUrl": "https://www.bbva.ch/blog/la-inversion-frente-al-espejo.html",
+    "madeInProdigioso": true,
+    "videoCover": null,
+    "cover": {
+      "id": 20,
+      "documentId": "o62lbxvkkcloiehhx2eatxi3",
+      "name": "design2.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 6000,
+      "height": 4500,
+      "hash": "design2_9889e9462d",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 5214.9,
+      "url": "/projects/bbva/bbva-cover.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-04T19:40:16.732Z",
+      "updatedAt": "2025-12-04T19:40:16.732Z",
+      "publishedAt": "2025-12-04T19:40:16.732Z"
     },
-    {
-      "name": "BBVA Suiza",
-      "cover": "design2.png",
-      "keys": ["Landing Page", "Scrollytelling"]
+    "project_categories": [
+      {
+        "id": 10,
+        "documentId": "mt1w3xkqphc5pbani1xelq4f",
+        "name": "Landing Page",
+        "slug": "landing-page",
+        "createdAt": "2025-12-07T21:30:02.060Z",
+        "updatedAt": "2025-12-07T21:30:02.060Z",
+        "publishedAt": "2025-12-07T21:30:02.064Z",
+        "locale": "en"
+      },
+      {
+        "id": 12,
+        "documentId": "gzofh4o26e9jqqzktantvi8t",
+        "name": "Scrollytelling",
+        "slug": "scrollytelling",
+        "createdAt": "2025-12-07T21:30:27.331Z",
+        "updatedAt": "2025-12-07T21:30:27.331Z",
+        "publishedAt": "2025-12-07T21:30:27.335Z",
+        "locale": "en"
+      },
+      {
+        "id": 14,
+        "documentId": "uwvagarq1jqrd7qjnlr2p6t6",
+        "name": "UX/UI",
+        "slug": "ux-ui",
+        "createdAt": "2025-12-07T21:31:01.002Z",
+        "updatedAt": "2025-12-07T21:31:01.002Z",
+        "publishedAt": "2025-12-07T21:31:01.007Z",
+        "locale": "en"
+      },
+      {
+        "id": 16,
+        "documentId": "h4i52jqqxmkzznyypeshqo9g",
+        "name": "Inphographic Design",
+        "slug": "inphographic-design",
+        "createdAt": "2025-12-07T21:31:15.607Z",
+        "updatedAt": "2025-12-07T21:31:15.607Z",
+        "publishedAt": "2025-12-07T21:31:15.611Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-videos",
+        "id": 16,
+        "videos": [
+          {
+            "id": 89,
+            "documentId": "x1e02r1h7x0y0sgye6yqp2rv",
+            "name": "suiza-2.mp4",
+            "alternativeText": null,
+            "caption": null,
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "suiza_2_88a53a8edf",
+            "ext": ".mp4",
+            "mime": "video/mp4",
+            "size": 16520.94,
+            "url": "/projects/bbva/bbva-2.mp4",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T21:11:14.327Z",
+            "updatedAt": "2025-12-09T21:11:14.327Z",
+            "publishedAt": "2025-12-09T21:11:14.328Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 119,
+        "images": [
+          {
+            "id": 91,
+            "documentId": "u4ized62iy4ydfncv7ofo9gn",
+            "name": "bbva-suiza.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "bbva_suiza_835cfe4cef",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 133.4,
+            "url": "/projects/bbva/bbva-suiza.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T21:11:14.433Z",
+            "updatedAt": "2025-12-09T21:11:14.433Z",
+            "publishedAt": "2025-12-09T21:11:14.433Z"
+          },
+          {
+            "id": 90,
+            "documentId": "wzxka8obr8cc5lj9uq2qpois",
+            "name": "suiza-3.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1340,
+            "height": 1340,
+            "hash": "suiza_3_8da1ccdf8d",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 100.36,
+            "url": "/projects/bbva/bbva-3.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T21:11:14.387Z",
+            "updatedAt": "2025-12-09T21:11:14.387Z",
+            "publishedAt": "2025-12-09T21:11:14.387Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 62,
+        "text": "In this project, besides the use of graphic elements, a more immersive experience was sought, utilizing elements like interactive infographics or AI-generated audio, for which I was responsible, to narrate the stories of different characters within the history."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "documentId": "xisp8uqmhk8fvnlvbcg4fxkv",
+    "title": "Fundación Sinfonía",
+    "projectEntryName": "Classical Musical Orchestra Site",
+    "projectEntryDescription": "Fundación Sinfonía is an organization dedicated to the promotion and development of classical music in the Dominican Republic. Since its creation in 1986, Sinfonía has worked tirelessly to raise the country's cultural and artistic level, providing support to young talents and organizing high-quality events that bring music closer to a broad and diverse audience.",
+    "slug": "fundacion-sinfonia",
+    "createdAt": "2025-12-07T21:34:45.943Z",
+    "updatedAt": "2025-12-10T19:39:52.701Z",
+    "publishedAt": "2025-12-10T19:39:52.708Z",
+    "projectUrl": "https://sinfonia.org.do/",
+    "madeInProdigioso": true,
+    "videoCover": false,
+    "cover": {
+      "id": 17,
+      "documentId": "i75uyandxp1szkxk8cea6ksl",
+      "name": "sinfonia-cover.png",
+      "alternativeText": null,
+      "caption": null,
+      "width": 3143,
+      "height": 2095,
+      "hash": "code2_ce5dbf6412",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 2689.39,
+      "url": "/projects/sinfonia/sinfonia-cover.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-04T19:40:15.895Z",
+      "updatedAt": "2025-12-04T19:40:15.895Z",
+      "publishedAt": "2025-12-04T19:40:15.895Z"
     },
-    {
-      "name": "The Other Spain",
-      "cover": "tos.webp",
-      "keys": ["E-Commerce", "Design System", "Tour WebApp"]
+    "project_categories": [
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Branding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      },
+      {
+        "id": 12,
+        "documentId": "gzofh4o26e9jqqzktantvi8t",
+        "name": "Scrollytelling",
+        "slug": "scrollytelling",
+        "createdAt": "2025-12-07T21:30:27.331Z",
+        "updatedAt": "2025-12-07T21:30:27.331Z",
+        "publishedAt": "2025-12-07T21:30:27.335Z",
+        "locale": "en"
+      },
+      {
+        "id": 14,
+        "documentId": "uwvagarq1jqrd7qjnlr2p6t6",
+        "name": "UX/UI",
+        "slug": "ux-ui",
+        "createdAt": "2025-12-07T21:31:01.002Z",
+        "updatedAt": "2025-12-07T21:31:01.002Z",
+        "publishedAt": "2025-12-07T21:31:01.007Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-videos",
+        "id": 22,
+        "videos": [
+          {
+            "id": 85,
+            "documentId": "asldzfz9thaniui1kjdcn09d",
+            "name": "sinfonia-3.mp4",
+            "alternativeText": null,
+            "caption": null,
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "sinfonia_3_ba4c20dc30",
+            "ext": ".mp4",
+            "mime": "video/mp4",
+            "size": 804.61,
+            "url": "/projects/sinfonia/sinfonia-3.mp4",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:38:28.919Z",
+            "updatedAt": "2025-12-09T20:38:28.919Z",
+            "publishedAt": "2025-12-09T20:38:28.920Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 149,
+        "images": [
+          {
+            "id": 86,
+            "documentId": "ct62yjgbyhvak5z3ihjm1fi7",
+            "name": "sinfonia.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "sinfonia_9ea35c4edb",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 336.24,
+            "url": "/projects/sinfonia/sinfonia.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:38:29.071Z",
+            "updatedAt": "2025-12-09T20:38:29.071Z",
+            "publishedAt": "2025-12-09T20:38:29.072Z"
+          },
+          {
+            "id": 87,
+            "documentId": "aa7vaxtcfjdf2pk6e29nsplm",
+            "name": "sinfonia-2.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1333,
+            "hash": "sinfonia_2_09c8f58f1f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 380.98,
+            "url": "/projects/sinfonia/sinfonia-2.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:38:29.126Z",
+            "updatedAt": "2025-12-09T20:38:29.126Z",
+            "publishedAt": "2025-12-09T20:38:29.126Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 150,
+        "images": [
+          {
+            "id": 88,
+            "documentId": "yv6diaoez3ve2dtuae7ha344",
+            "name": "sinfonia-4.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "sinfonia_4_cd5111b1f0",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 146.13,
+            "url": "/projects/sinfonia/sinfonia-4.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:49:01.052Z",
+            "updatedAt": "2025-12-09T20:49:28.749Z",
+            "publishedAt": "2025-12-09T20:49:01.052Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 76,
+        "text": "For this project a new digital look was developed using a palette that evokes classical orchestra instruments but with a bright touch that ensures a unique and unforgettable visual identity and throughout the development of this project I was in charge of the complete visual aspect the UI designs for desktop and responsive the supervision of the development team and the creation of resource assets and textures with generative AI."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "documentId": "ebfxdi00av1xpu178imetcho",
+    "title": "Demócrata",
+    "projectEntryName": "Democrata",
+    "projectEntryDescription": "Demócrata.es is a prominent Spanish digital newspaper specializing in parliamentary information and public policy. It aims to provide comprehensive and factual news coverage regarding the legislative and executive powers, focusing on key developments in the Congress, Senate, Government, Autonomous Communities (CCAA), and European affairs. It is recognized as a reference medium for political decision-makers in Spain.",
+    "slug": "democrata",
+    "createdAt": "2025-12-03T09:26:34.027Z",
+    "updatedAt": "2025-12-10T19:32:03.885Z",
+    "publishedAt": "2025-12-10T19:32:03.891Z",
+    "projectUrl": "https://www.democrata.es/",
+    "madeInProdigioso": true,
+    "videoCover": null,
+    "cover": {
+      "id": 107,
+      "documentId": "chwf2onpg0mp8rut7fv7fw6z",
+      "name": "democrata1.webp",
+      "alternativeText": null,
+      "caption": null,
+      "width": 6000,
+      "height": 4500,
+      "hash": "democrata_1_418c2c04f7",
+      "ext": ".webp",
+      "mime": "image/webp",
+      "size": 4406.44,
+      "url": "/projects/democrata/democrata1.webp",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-10T19:19:45.046Z",
+      "updatedAt": "2025-12-10T19:19:45.046Z",
+      "publishedAt": "2025-12-10T19:19:45.047Z"
     },
-    {
-      "name": "Nexus Project",
-      "cover": "nexus.webp",
-      "keys": ["Typography", "WebApp", "Design System"]
+    "project_categories": [
+      {
+        "id": 4,
+        "documentId": "hzbhtuvdcqtnnwd7yon1xay9",
+        "name": "Product Design",
+        "slug": "product-design",
+        "createdAt": "2025-12-03T10:58:55.804Z",
+        "updatedAt": "2025-12-03T10:58:55.804Z",
+        "publishedAt": "2025-12-03T10:58:55.811Z",
+        "locale": "en"
+      },
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Branding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      },
+      {
+        "id": 14,
+        "documentId": "uwvagarq1jqrd7qjnlr2p6t6",
+        "name": "UX/UI",
+        "slug": "ux-ui",
+        "createdAt": "2025-12-07T21:31:01.002Z",
+        "updatedAt": "2025-12-07T21:31:01.002Z",
+        "publishedAt": "2025-12-07T21:31:01.007Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 143,
+        "images": [
+          {
+            "id": 105,
+            "documentId": "cy9avwo1ttxf6fp9ki9uoz4g",
+            "name": "democrata-2.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "democrata_2_e44ff334fc",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 234.24,
+            "url": "/projects/democrata/democrata-2.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T19:19:41.747Z",
+            "updatedAt": "2025-12-10T19:19:41.747Z",
+            "publishedAt": "2025-12-10T19:19:41.747Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 144,
+        "images": [
+          {
+            "id": 104,
+            "documentId": "nws4v4kc5smq59izdaetaow7",
+            "name": "democrata-4.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1333,
+            "hash": "democrata_4_f74e7fb7b6",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 99.47,
+            "url": "/projects/democrata/democrata-4.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T19:19:41.538Z",
+            "updatedAt": "2025-12-10T19:19:41.538Z",
+            "publishedAt": "2025-12-10T19:19:41.539Z"
+          },
+          {
+            "id": 106,
+            "documentId": "wabgqt0ja53tq8s8poqlb0j3",
+            "name": "democrata-5.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2470,
+            "height": 2280,
+            "hash": "democrata_5_15d39f08a8",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 144.64,
+            "url": "/projects/democrata/democrata-5.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T19:19:41.916Z",
+            "updatedAt": "2025-12-10T19:19:41.916Z",
+            "publishedAt": "2025-12-10T19:19:41.916Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 74,
+        "text": "The objective of this project was to develop a complete brand redesign and give it a fresher cleaner and more minimalist look contrasting with the current tendency to oversaturate news media with content we sought an elegant image to maintain a serious aspect for older generations yet a fresh and modern appearance to attract new generations of readers and in this project I was responsible for the complete brand redesign the UI design and the creation and management of the complete design system."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "documentId": "mvqziqaca5oqa19qmomd4n9w",
+    "title": "Colin Powell School",
+    "projectEntryName": "The City College of New York",
+    "projectEntryDescription": "The Powell School is home to the social sciences at CCNY as well as the core leadership development, business, psychology, and public service programs of the College.",
+    "slug": "colin-powell-school",
+    "createdAt": "2025-12-09T22:20:05.946Z",
+    "updatedAt": "2025-12-09T22:20:05.946Z",
+    "publishedAt": "2025-12-09T22:20:05.956Z",
+    "projectUrl": "https://colinpowellschool.ccny.cuny.edu/",
+    "madeInProdigioso": true,
+    "videoCover": null,
+    "cover": {
+      "id": 93,
+      "documentId": "s9tgzsd7nhcov406zk54y7tg",
+      "name": "colin-1.jpg",
+      "alternativeText": null,
+      "caption": null,
+      "width": 2000,
+      "height": 1500,
+      "hash": "colin_1_0d854ac07a",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 185.78,
+      "url": "/projects/colin-powell-school/colin-1.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-09T22:11:58.168Z",
+      "updatedAt": "2025-12-09T22:11:58.168Z",
+      "publishedAt": "2025-12-09T22:11:58.168Z"
     },
-    {
-      "name": "Fundación Sinfonía",
-      "cover": "code2.png",
-      "keys": ["Corporative Site", "Branding"]
-    }  
+    "project_categories": [
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Branding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      },
+      {
+        "id": 4,
+        "documentId": "hzbhtuvdcqtnnwd7yon1xay9",
+        "name": "Product Design",
+        "slug": "product-design",
+        "createdAt": "2025-12-03T10:58:55.804Z",
+        "updatedAt": "2025-12-03T10:58:55.804Z",
+        "publishedAt": "2025-12-03T10:58:55.811Z",
+        "locale": "en"
+      },
+      {
+        "id": 14,
+        "documentId": "uwvagarq1jqrd7qjnlr2p6t6",
+        "name": "UX/UI",
+        "slug": "ux-ui",
+        "createdAt": "2025-12-07T21:31:01.002Z",
+        "updatedAt": "2025-12-07T21:31:01.002Z",
+        "publishedAt": "2025-12-07T21:31:01.007Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 121,
+        "images": [
+          {
+            "id": 94,
+            "documentId": "vn42hglqgxh4ckixy7dowluf",
+            "name": "colin-2.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1408,
+            "hash": "colin_2_3ea0292f88",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 257.79,
+            "url": "/projects/colin-powell-school/colin-2.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T22:11:58.181Z",
+            "updatedAt": "2025-12-09T22:11:58.181Z",
+            "publishedAt": "2025-12-09T22:11:58.181Z"
+          },
+          {
+            "id": 92,
+            "documentId": "olws669lwr9qapk1hyqtfx8g",
+            "name": "colin-3.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1316,
+            "hash": "colin_3_acc28e65b6",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 106.14,
+            "url": "/projects/colin-powell-school/colin-3.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T22:11:58.130Z",
+            "updatedAt": "2025-12-09T22:11:58.130Z",
+            "publishedAt": "2025-12-09T22:11:58.130Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-videos",
+        "id": 18,
+        "videos": [
+          {
+            "id": 95,
+            "documentId": "ydlguzi0w8oks26jg0mle7yk",
+            "name": "colin-4.mp4",
+            "alternativeText": null,
+            "caption": null,
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "colin_4_ade06ed234",
+            "ext": ".mp4",
+            "mime": "video/mp4",
+            "size": 4345.43,
+            "url": "/projects/colin-powell-school/colin-4.mp4",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T22:15:32.901Z",
+            "updatedAt": "2025-12-09T22:15:32.901Z",
+            "publishedAt": "2025-12-09T22:15:32.901Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 64,
+        "text": "This project consisted of the redesign of the digital brand identity the web redesign and the rethinking of the information architecture through the creation of 'about' type pages and components over which to propagate the different levels of university content."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "documentId": "x10pgu9jd6r0xfwivyw4pthr",
+    "title": "Illustration",
+    "projectEntryName": "Drawing & Painting",
+    "projectEntryDescription": "A collection of my best drawings and illustrations since 2020. It includes personal projects and professional works for digital and printed magazines and games. Note that all of this works are all handmade and no AI has been used in the making process.",
+    "slug": "illustration",
+    "createdAt": "2025-12-03T09:21:05.646Z",
+    "updatedAt": "2025-12-09T20:29:50.245Z",
+    "publishedAt": "2025-12-09T20:29:50.253Z",
+    "projectUrl": null,
+    "madeInProdigioso": null,
+    "videoCover": null,
+    "cover": {
+      "id": 84,
+      "documentId": "msox4ju07es3ptqqx5l7wogq",
+      "name": "east_ther market_stalls_mb-cut.webp",
+      "alternativeText": null,
+      "caption": null,
+      "width": 2000,
+      "height": 995,
+      "hash": "east_ther_market_stalls_mb_dd544da59c",
+      "ext": ".webp",
+      "mime": "image/webp",
+      "size": 59.55,
+      "url": "/projects/illustration/east_ther market_stalls_mb-cut.webp",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-09T20:29:38.201Z",
+      "updatedAt": "2025-12-09T20:29:38.201Z",
+      "publishedAt": "2025-12-09T20:29:38.201Z"
+    },
+    "project_categories": [
+      {
+        "id": 18,
+        "documentId": "adn1pry4pq0hh7zgfl7d9n7i",
+        "name": "Cover Art",
+        "slug": "cover-art",
+        "createdAt": "2025-12-08T10:24:09.268Z",
+        "updatedAt": "2025-12-08T10:24:09.268Z",
+        "publishedAt": "2025-12-08T10:24:09.271Z",
+        "locale": "en"
+      },
+      {
+        "id": 2,
+        "documentId": "pj5uapcxypmegye7zose06sw",
+        "name": "Character Design",
+        "slug": "character-design",
+        "createdAt": "2025-12-03T10:58:30.703Z",
+        "updatedAt": "2025-12-03T10:58:30.703Z",
+        "publishedAt": "2025-12-03T10:58:30.713Z",
+        "locale": "en"
+      },
+      {
+        "id": 22,
+        "documentId": "mwe2i3s79s1vka11cxo4jz0b",
+        "name": "Sketches",
+        "slug": "sketches",
+        "createdAt": "2025-12-09T20:11:56.223Z",
+        "updatedAt": "2025-12-09T20:11:56.223Z",
+        "publishedAt": "2025-12-09T20:11:56.232Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 105,
+        "images": [
+          {
+            "id": 65,
+            "documentId": "ymjv6g8w0hsfzur2bldmuv67",
+            "name": "170623_COLOR_EJ05_05_JM.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 877,
+            "hash": "170623_COLOR_EJ_05_05_JM_dc52948f64",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 109.24,
+            "url": "/projects/illustration/170623_COLOR_EJ05_05_JM.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:08.595Z",
+            "updatedAt": "2025-12-09T20:23:08.595Z",
+            "publishedAt": "2025-12-09T20:23:08.595Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 106,
+        "images": [
+          {
+            "id": 77,
+            "documentId": "uh8g97n7yut99sc3mddmwbi1",
+            "name": "enviro-concept-3.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1172,
+            "hash": "enviro_concept_3_52cf9e54ab",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 127.46,
+            "url": "/projects/illustration/enviro-concept-3.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:10.566Z",
+            "updatedAt": "2025-12-09T20:23:10.566Z",
+            "publishedAt": "2025-12-09T20:23:10.566Z"
+          },
+          {
+            "id": 75,
+            "documentId": "nb7t7b90eb4skrfcum0px6me",
+            "name": "kidnapp-final.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 974,
+            "hash": "kidnapp_final_5c4d741adf",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 161.81,
+            "url": "/projects/illustration/kidnapp-final.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:09.967Z",
+            "updatedAt": "2025-12-09T20:23:09.967Z",
+            "publishedAt": "2025-12-09T20:23:09.967Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 107,
+        "images": [
+          {
+            "id": 70,
+            "documentId": "j403e0uypmc9igxqxgxf3lt9",
+            "name": "grizzly_final.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 2764,
+            "hash": "grizzly_final_560021f06c",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 433.16,
+            "url": "/projects/illustration/grizzly_final.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:08.809Z",
+            "updatedAt": "2025-12-09T20:23:08.809Z",
+            "publishedAt": "2025-12-09T20:23:08.809Z"
+          },
+          {
+            "id": 69,
+            "documentId": "r596yhxw940zldd2tgvsn8fx",
+            "name": "watchtower_rashka_prom_new.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 2837,
+            "hash": "watchtower_rashka_prom_new_e077c6d42e",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 183.32,
+            "url": "/projects/illustration/watchtower_rashka_prom_new.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:08.745Z",
+            "updatedAt": "2025-12-09T20:23:08.745Z",
+            "publishedAt": "2025-12-09T20:23:08.745Z"
+          },
+          {
+            "id": 80,
+            "documentId": "lhsm8sjcs0av9s7zrlfh9kyu",
+            "name": "anouto-final.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 2341,
+            "hash": "anouto_final_c3619e545e",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 179.64,
+            "url": "/projects/illustration/anouto-final.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:10.658Z",
+            "updatedAt": "2025-12-09T20:23:10.658Z",
+            "publishedAt": "2025-12-09T20:23:10.658Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 108,
+        "images": [
+          {
+            "id": 76,
+            "documentId": "pwxiwfg9xmgcm3l3t7wsewm5",
+            "name": "ghost-final.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 2044,
+            "hash": "ghost_final_e3d56a2262",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 202.29,
+            "url": "/projects/illustration/ghost-final.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:09.974Z",
+            "updatedAt": "2025-12-09T20:23:09.974Z",
+            "publishedAt": "2025-12-09T20:23:09.974Z"
+          },
+          {
+            "id": 66,
+            "documentId": "u6yvtbbtgbc1vpfn9dcdp27u",
+            "name": "east_ther market_stalls_mb.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1329,
+            "hash": "east_ther_market_stalls_mb_bcbcf5f606",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 96.68,
+            "url": "/projects/illustration/east_ther market_stalls_mb.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:08.618Z",
+            "updatedAt": "2025-12-09T20:23:08.618Z",
+            "publishedAt": "2025-12-09T20:23:08.618Z"
+          },
+          {
+            "id": 78,
+            "documentId": "e4cl3nwt0fpewpcaooluc7dx",
+            "name": "illus1.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 2000,
+            "hash": "illus1_a2b79d4c94",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 126.42,
+            "url": "/projects/illustration/illus1.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:10.596Z",
+            "updatedAt": "2025-12-09T20:23:10.596Z",
+            "publishedAt": "2025-12-09T20:23:10.596Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 109,
+        "images": [
+          {
+            "id": 82,
+            "documentId": "xjo4an4sba2h63kxny6apirx",
+            "name": "forgotten creation_4-Recuperado.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 3128,
+            "hash": "forgotten_creation_4_Recuperado_d6c6c5fe10",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 237.83,
+            "url": "/projects/illustration/forgotten creation_4-Recuperado.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:10.685Z",
+            "updatedAt": "2025-12-09T20:23:10.685Z",
+            "publishedAt": "2025-12-09T20:23:10.685Z"
+          },
+          {
+            "id": 74,
+            "documentId": "rd3zqwgm6sa5goreu5owkc03",
+            "name": "150223_ILUSTRACIÓN_TEODOR CLEVE_02_JG.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 2595,
+            "hash": "150223_ILUSTRACION_TEODOR_CLEVE_02_JG_cf507281a8",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 247.87,
+            "url": "/projects/illustration/150223_ILUSTRACIÓN_TEODOR CLEVE_02_JG.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:09.953Z",
+            "updatedAt": "2025-12-09T20:23:09.953Z",
+            "publishedAt": "2025-12-09T20:23:09.954Z"
+          },
+          {
+            "id": 73,
+            "documentId": "tbbqbtx6k5p8p6toifnjw7fb",
+            "name": "140323_ILUSTRACIÓN_NOETHER_JG_03.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 3200,
+            "hash": "140323_ILUSTRACION_NOETHER_JG_03_6f3d339a45",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 171.1,
+            "url": "/projects/illustration/140323_ILUSTRACIÓN_NOETHER_JG_03.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:09.952Z",
+            "updatedAt": "2025-12-09T20:23:09.952Z",
+            "publishedAt": "2025-12-09T20:23:09.952Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 110,
+        "images": [
+          {
+            "id": 67,
+            "documentId": "fbk4tblk00ho6d18b5j0ro5r",
+            "name": "150623_COLOR_EJ04_04_JM.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 842,
+            "hash": "150623_COLOR_EJ_04_04_JM_0118490ed2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 122.06,
+            "url": "/projects/illustration/150623_COLOR_EJ04_04_JM.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:08.631Z",
+            "updatedAt": "2025-12-09T20:23:08.631Z",
+            "publishedAt": "2025-12-09T20:23:08.631Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 111,
+        "images": [
+          {
+            "id": 79,
+            "documentId": "xcjqtg5gvmgo45uk91hos42b",
+            "name": "brothers_4.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1333,
+            "hash": "brothers_4_5067697419",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 83.73,
+            "url": "/projects/illustration/brothers_4.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:10.614Z",
+            "updatedAt": "2025-12-09T20:23:10.614Z",
+            "publishedAt": "2025-12-09T20:23:10.614Z"
+          },
+          {
+            "id": 71,
+            "documentId": "k9swie93dnl9yf5xhhc3q2pv",
+            "name": "161222_EXT_NIKEA_01_JM.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "161222_EXT_NIKEA_01_JM_25c31a3168",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 103.87,
+            "url": "/projects/illustration/161222_EXT_NIKEA_01_JM.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-09T20:23:09.798Z",
+            "updatedAt": "2025-12-09T20:23:09.798Z",
+            "publishedAt": "2025-12-09T20:23:09.798Z"
+          }
+        ]
+      }
+    ]
+  }
 ]
-
