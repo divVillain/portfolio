@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  /* 
+  outline: 1px solid pink;
+  */
+  text-wrap: pretty;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+.link-button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(230, 230, 230);
+}

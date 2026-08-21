@@ -1,0 +1,8 @@
+GET https://ethical-horse-6991787eeb.strapiapp.com/admin
+Authorization: Bearer 94b57546eca47fe32e04f2dd6db96c735dd1956d5eabc4aea9280337183bc356376935b99bc954809bcf388b662d1bea708832cd463cb3eab3937ff96c63c4fd3a08ff42362a7f514e6e50f6676d51958fb5d9ebbc30b13d8144790cdf83d94778acf4a49f83bf359e6937ba6f45f527777d6e2cdbe1cb086ed4142cbad9a108
+
+################
+################
+
+GET http://localhost:1337/api/projects?filters[slug][$eq]=illustration&populate[0]=cover&populate[1]=project_categories&populate[3]=sections.images&populate[4]=sections.videos 
+Authorization: Bearer 301d01822a0c3c5b92928be8c52d68c85a75644156a101a54f0ab2ad4abab3f4ee6d613f1f5f54a3bb897841870d1eb92857bf5c5ad5b11919a366cd5324d8ceb2a87ec521700f0930b89bffe5a2463d95490793aeed2465ee37a67ccc79a3dd67cabab679d3591162bc3ec27f2cb87f397fa0c48f464a5f935a558b910378a5

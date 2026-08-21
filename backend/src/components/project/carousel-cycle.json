@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_project_carousel_cycles",
+  "info": {
+    "displayName": "CarouselCycle"
+  },
+  "options": {},
+  "attributes": {
+    "paint": {
+      "type": "component",
+      "component": "project.hero-image",
+      "repeatable": false
+    },
+    "design": {
+      "type": "component",
+      "component": "project.hero-image",
+      "repeatable": false
+    },
+    "code": {
+      "type": "component",
+      "component": "project.hero-image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

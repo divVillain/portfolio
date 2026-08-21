@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_carousels",
+  "info": {
+    "singularName": "hero-carousel",
+    "pluralName": "hero-carousels",
+    "displayName": "HeroCarousel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel": {
+      "type": "dynamiczone",
+      "components": [
+        "project.carousel-cycle"
+      ]
+    }
+  }
+}

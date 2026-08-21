@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_project_project_descriptions",
+  "info": {
+    "displayName": "projectDescription",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

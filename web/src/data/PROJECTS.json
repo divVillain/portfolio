@@ -1,0 +1,345 @@
+[
+  {
+    "id": 70,
+    "documentId": "hprm2kqj5bjx14uefwcn508o",
+    "title": "The Other Spain",
+    "projectEntryName": "Tour Booking E-Commerce",
+    "projectEntryDescription": "The Other Spain is a premium travel e-commerce platform offering curated tours across Spain for international travelers. The product focuses on high-value itineraries that combine iconic destinations with lesser-known locations. These tours often represent multi-thousand-euro purchases, making the booking experience a complex decision process. My role was to redesign the platform to improve product discovery, trip planning and booking conversion.",
+    "slug": "the-other-spain",
+    "createdAt": "2025-12-07T21:28:32.027Z",
+    "updatedAt": "2025-12-10T18:54:39.586Z",
+    "publishedAt": "2025-12-10T18:54:39.594Z",
+    "projectUrl": "https://theotherspaintours.com/",
+    "madeInProdigioso": true,
+    "videoCover": null,
+    "cover": {
+      "id": 97,
+      "documentId": "kaqz3ukn592hgekfayb9gmmr",
+      "name": "tos-portada.jpg",
+      "alternativeText": null,
+      "caption": null,
+      "width": 2000,
+      "height": 1333,
+      "hash": "tos_1_67a450ab1e",
+      "ext": ".webp",
+      "mime": "image/webp",
+      "size": 126.29,
+      "url": "/projects/the-other-spain/tos-portada.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-10T18:37:26.741Z",
+      "updatedAt": "2025-12-10T18:37:26.741Z",
+      "publishedAt": "2025-12-10T18:37:26.741Z"
+    },
+    "project_categories": [
+      {
+        "id": 4,
+        "documentId": "hzbhtuvdcqtnnwd7yon1xay9",
+        "name": "Product Design",
+        "slug": "product-design",
+        "createdAt": "2025-12-03T10:58:55.804Z",
+        "updatedAt": "2025-12-03T10:58:55.804Z",
+        "publishedAt": "2025-12-03T10:58:55.811Z",
+        "locale": "en"
+      },
+      {
+        "id": 6,
+        "documentId": "wwb3iy6vpauj4npvzi6f2xo1",
+        "name": "E-Commerce",
+        "slug": "e-commerce",
+        "createdAt": "2025-12-07T21:27:53.689Z",
+        "updatedAt": "2025-12-07T21:27:53.689Z",
+        "publishedAt": "2025-12-07T21:27:53.695Z",
+        "locale": "en"
+      },
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Branding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 132,
+        "images": [
+          {
+            "id": 100,
+            "documentId": "m5vif75jonef9vx0sbnu3dah",
+            "name": "tos-2.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 5000,
+            "height": 3333,
+            "hash": "tos_2_91ab7523df",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 646.26,
+            "url": "/projects/the-other-spain/tos-2.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:37:27.662Z",
+            "updatedAt": "2025-12-10T18:37:27.662Z",
+            "publishedAt": "2025-12-10T18:37:27.662Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 133,
+        "images": [
+          {
+            "id": 99,
+            "documentId": "zs2odovjy725s3s4jq7f2ox7",
+            "name": "tos-4.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 3000,
+            "height": 2000,
+            "hash": "tos_4_34fcba8e13",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 86.54,
+            "url": "/projects/the-other-spain/tos-4.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:37:26.904Z",
+            "updatedAt": "2025-12-10T18:37:26.904Z",
+            "publishedAt": "2025-12-10T18:37:26.904Z"
+          },
+          {
+            "id": 98,
+            "documentId": "zvrq1ug6ufjq02awrwqkr14p",
+            "name": "tos-3.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1429,
+            "hash": "tos_3_7833fb6b21",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 302.49,
+            "url": "/projects/the-other-spain/tos-3.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:37:26.901Z",
+            "updatedAt": "2025-12-10T18:37:26.901Z",
+            "publishedAt": "2025-12-10T18:37:26.901Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-videos",
+        "id": 20,
+        "videos": [
+          {
+            "id": 101,
+            "documentId": "gnuid4xohqcrhdt8iceqgykk",
+            "name": "tos-5.mp4",
+            "alternativeText": null,
+            "caption": null,
+            "width": null,
+            "height": null,
+            "formats": null,
+            "hash": "tos_5_4cd6a2ed66",
+            "ext": ".mp4",
+            "mime": "video/mp4",
+            "size": 8398.66,
+            "url": "/projects/the-other-spain/tos-5.mp4",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:51:43.978Z",
+            "updatedAt": "2025-12-10T18:54:19.717Z",
+            "publishedAt": "2025-12-10T18:51:43.978Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 134,
+        "images": [
+          {
+            "id": 103,
+            "documentId": "d79i92gjubrknzl3m4ee9bxu",
+            "name": "tos-6.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1334,
+            "hash": "tos_6_8b006e3f82",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 321.98,
+            "url": "/projects/the-other-spain/tos-6.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T18:53:59.237Z",
+            "updatedAt": "2025-12-10T18:53:59.237Z",
+            "publishedAt": "2025-12-10T18:53:59.237Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 71,
+        "text": "The Other Spain is an e-commerce specializing in luxury tours and in this project I was tasked with giving the brand a new look so that it exuded an exclusive and elegant yet accessible feel I also helped conceptualize the UX prototypes and designed the purchase flow and an interactive map for selecting tours including the entire visual part of the website and the design system."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "documentId": "ebfxdi00av1xpu178imetcho",
+    "title": "Demócrata",
+    "projectEntryName": "Democrata",
+    "projectEntryDescription": "Demócrata is a digital newspaper focused on parliamentary and institutional political coverage. Its audience primarily includes readers interested in legislative activity, political analysis, and institutional reporting. While the publication had strong editorial credibility, its digital product felt outdated and struggled to connect with younger readers accustomed to faster and more interactive news consumption. The goal of the project was to modernize the digital experience while preserving the credibility and trust associated with political journalism, and to explore how AI could enhance understanding of complex political information.",
+    "slug": "democrata",
+    "createdAt": "2025-12-03T09:26:34.027Z",
+    "updatedAt": "2025-12-10T19:32:03.885Z",
+    "publishedAt": "2025-12-10T19:32:03.891Z",
+    "projectUrl": "https://www.democrata.es/",
+    "madeInProdigioso": true,
+    "videoCover": null,
+    "cover": {
+      "id": 107,
+      "documentId": "chwf2onpg0mp8rut7fv7fw6z",
+      "name": "democrata1.webp",
+      "alternativeText": null,
+      "caption": null,
+      "width": 6000,
+      "height": 4500,
+      "hash": "democrata_1_418c2c04f7",
+      "ext": ".webp",
+      "mime": "image/webp",
+      "size": 4406.44,
+      "url": "/projects/democrata/democrata-5.webp",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-12-10T19:19:45.046Z",
+      "updatedAt": "2025-12-10T19:19:45.046Z",
+      "publishedAt": "2025-12-10T19:19:45.047Z"
+    },
+    "project_categories": [
+      {
+        "id": 4,
+        "documentId": "hzbhtuvdcqtnnwd7yon1xay9",
+        "name": "Digital Newspaper",
+        "slug": "product-design",
+        "createdAt": "2025-12-03T10:58:55.804Z",
+        "updatedAt": "2025-12-03T10:58:55.804Z",
+        "publishedAt": "2025-12-03T10:58:55.811Z",
+        "locale": "en"
+      },
+      {
+        "id": 8,
+        "documentId": "yc9rkjpze2s75k6qwwys88l6",
+        "name": "Rebranding",
+        "slug": "branding",
+        "createdAt": "2025-12-07T21:28:19.466Z",
+        "updatedAt": "2025-12-07T21:28:19.466Z",
+        "publishedAt": "2025-12-07T21:28:19.469Z",
+        "locale": "en"
+      },
+      {
+        "id": 14,
+        "documentId": "uwvagarq1jqrd7qjnlr2p6t6",
+        "name": "AI Implementation",
+        "slug": "ux-ui",
+        "createdAt": "2025-12-07T21:31:01.002Z",
+        "updatedAt": "2025-12-07T21:31:01.002Z",
+        "publishedAt": "2025-12-07T21:31:01.007Z",
+        "locale": "en"
+      }
+    ],
+    "sections": [
+      {
+        "__component": "project.project-images",
+        "id": 143,
+        "images": [
+          {
+            "id": 105,
+            "documentId": "cy9avwo1ttxf6fp9ki9uoz4g",
+            "name": "democrata-2.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1500,
+            "hash": "democrata_2_e44ff334fc",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 234.24,
+            "url": "/projects/democrata/democrata-2.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T19:19:41.747Z",
+            "updatedAt": "2025-12-10T19:19:41.747Z",
+            "publishedAt": "2025-12-10T19:19:41.747Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-images",
+        "id": 144,
+        "images": [
+          {
+            "id": 104,
+            "documentId": "nws4v4kc5smq59izdaetaow7",
+            "name": "democrata-4.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2000,
+            "height": 1333,
+            "hash": "democrata_4_f74e7fb7b6",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 99.47,
+            "url": "/projects/democrata/democrata-4.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T19:19:41.538Z",
+            "updatedAt": "2025-12-10T19:19:41.538Z",
+            "publishedAt": "2025-12-10T19:19:41.539Z"
+          },
+          {
+            "id": 106,
+            "documentId": "wabgqt0ja53tq8s8poqlb0j3",
+            "name": "democrata-5.webp",
+            "alternativeText": null,
+            "caption": null,
+            "width": 2470,
+            "height": 2280,
+            "hash": "democrata_5_15d39f08a8",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 144.64,
+            "url": "/projects/democrata/democrata-5.webp",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-12-10T19:19:41.916Z",
+            "updatedAt": "2025-12-10T19:19:41.916Z",
+            "publishedAt": "2025-12-10T19:19:41.916Z"
+          }
+        ]
+      },
+      {
+        "__component": "project.project-description",
+        "id": 74,
+        "text": "The objective of this project was to develop a complete brand redesign and give it a fresher cleaner and more minimalist look contrasting with the current tendency to oversaturate news media with content we sought an elegant image to maintain a serious aspect for older generations yet a fresh and modern appearance to attract new generations of readers and in this project I was responsible for the complete brand redesign the UI design and the creation and management of the complete design system."
+      }
+    ]
+  }
+]

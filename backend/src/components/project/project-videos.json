@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_project_project_videos",
+  "info": {
+    "displayName": "ProjectVideos",
+    "icon": "cast"
+  },
+  "options": {},
+  "attributes": {
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "videos",
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

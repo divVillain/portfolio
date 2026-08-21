@@ -1,0 +1,85 @@
+:root {
+  /* Primary Colors */
+  --primary-red: #ff2f00;
+
+  /* Neutrals Scale */
+  --neutral-0: #000000;
+  --neutral-100: #161616;
+  --neutral-200: #2e2e2e;
+  --neutral-300: #6d6d6d;
+  --neutral-400: #8e8e8e;
+  --neutral-500: #b4b4b4;
+  --neutral-600: #c9c9c9;
+  --neutral-700: #d3d3d3;
+  --neutral-800: #eaeaea;
+  --neutral-900: #f2f2f2;
+  --neutral-1000: #ffffff;
+
+  /* Semantic Tokens */
+  --background-primary: #0d0d0d;
+  --background-secondary: #161616;
+  --background-tertiary: #2e2e2e;
+
+  --surface-subtle: rgba(255, 255, 255, 0.06);
+  --surface-default: rgba(255, 255, 255, 0.1);
+  --surface-elevated: rgba(255, 255, 255, 0.18);
+  --surface-white: rgba(255, 255, 255);
+
+  --text-primary: #ffffff;
+  --text-secondary: #b4b4b4;
+  --text-tertiary: #8e8e8e;
+  --text-muted: #6d6d6d;
+  --text-disabled: #2e2e2e;
+  --text-on-primary: #000000;
+  --text-on-secondary: #8e8e8e;
+
+  --border-default: #d3d3d3;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-disabled {
+  color: var(--text-disabled);
+}
+
+.text-primary-red {
+  color: var(--primary-red);
+}
+.border-default {
+  border-color: var(--border-default);
+}
+.border-neutral-300 {
+  border-color: var(--neutral-300);
+}
+.surface-subtle {
+  background-color: var(--surface-subtle);
+}
+.surface-default {
+  background-color: var(--surface-default);
+}
+.surface-primary-red {
+  background-color: var(--primary-red);
+}
+.surface-white {
+  background-color: var(--surface-white);
+}
+.text-on-primary {
+  color: var(--text-on-primary);
+}
+.text-on-secondary {
+  color: var(--text-on-secondary);
+}

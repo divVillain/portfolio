@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "projectEntryName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "projectEntryDescription": {
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "project_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-category.project-category"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "project.project-images",
+        "project.project-description",
+        "project.project-videos"
+      ]
+    },
+    "projectUrl": {
+      "type": "string"
+    },
+    "madeInProdigioso": {
+      "type": "boolean"
+    },
+    "videoCover": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
