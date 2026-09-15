@@ -92,7 +92,7 @@ export default function Hero() {
                   backgroundImage: `url(/home/${item.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  filter: "brightness(.1) grayscale(1)",
+                  filter: "brightness(.15) grayscale(1)",
                 }}
               ></div>
             );
@@ -109,7 +109,7 @@ export default function Hero() {
                   backgroundImage: `url(/home/${item.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  filter: "brightness(.1) grayscale(1)",
+                  filter: "brightness(.25) grayscale(1)",
                 }}
               ></div>
             );

@@ -2,7 +2,21 @@
   [
     {
       "skill": "products",
-      "image": "tour-map.jpg"
+      "image": "demo-home.jpg"
+    },
+    {
+      "skill": "experiences",
+      "image": "tos-hero.jpg"
+    },
+    {
+      "skill": "stories",
+      "image": "natur.jpg"
+    }
+  ],
+  [
+    {
+      "skill": "products",
+      "image": "tos-hero-2.jpg"
     },
     {
       "skill": "experiences",
@@ -10,27 +24,13 @@
     },
     {
       "skill": "stories",
-      "image": "dem-story.jpg"
+      "image": "c2n.jpg"
     }
   ],
   [
     {
       "skill": "products",
-      "image": "tour-map.jpg"
-    },
-    {
-      "skill": "experiences",
-      "image": "tos-portada.jpg"
-    },
-    {
-      "skill": "stories",
-      "image": "dem-story.jpg"
-    }
-  ],
-  [
-    {
-      "skill": "products",
-      "image": "tour-map.jpg"
+      "image": "sinfo.jpg"
     },
     {
       "skill": "experiences",
