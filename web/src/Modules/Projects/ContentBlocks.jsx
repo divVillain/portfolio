@@ -48,7 +48,7 @@ function BulletList({ children }) {
 
 function AnchorSection({ children, id, index="" }) {
   return (
-    <article id={`${id}`} className="fade-in grid grid-cols-12 gap-10 w-full">
+    <article id={`${id}`} className="fade-in grid grid-cols-12 gap-10 max-w-[800px]">
       {id ? (
         <div className="flex gap-4 col-span-4">
             <span className="text-tertiary body-xlarge">0{index}</span>
@@ -78,13 +78,13 @@ function BodyBlock({ children }) {
   );
 }
 function Image({ src }) {
-  return <img src={src} className="fade-in w-full rounded-lg" />;
+  return <img src={src} className="fade-in w-full rounded-lg object-cover" />;
 }
 function ImageList({ children }) {
   return <ul className="flex gap-2">{children}</ul>;
 }
 function ImageSection({ children }) {
-  return <section className="flex flex-col gap-2 w-full">{children}</section>;
+  return <section className="flex flex-col gap-4 w-full">{children}</section>;
 }
 
 export {

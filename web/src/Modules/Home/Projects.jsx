@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from "react";
-import { getProjectsInfo } from "../../lib/get-projects-info.js";
 import { Link } from "react-router-dom";
 import PROJECTS from "../../data/PROJECTS.json";
 

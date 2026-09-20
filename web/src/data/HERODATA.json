@@ -2,43 +2,43 @@
   [
     {
       "skill": "products",
-      "image": "demo-home.jpg"
+      "image": "projects/carbon2nature/c2n-portada.jpg"
     },
     {
       "skill": "experiences",
-      "image": "tos-hero.jpg"
+      "image": "home/sinfonia-2.jpg"
     },
     {
       "skill": "stories",
-      "image": "natur.jpg"
+      "image": "home/sinfo.jpg"
     }
   ],
   [
     {
       "skill": "products",
-      "image": "tos-hero-2.jpg"
+      "image": "home/colin-2.jpg"
     },
     {
       "skill": "experiences",
-      "image": "tos-portada.jpg"
+      "image": "home/tos-portada.jpg"
     },
     {
       "skill": "stories",
-      "image": "c2n.jpg"
+      "image": "home/c2n.jpg"
     }
   ],
   [
     {
       "skill": "products",
-      "image": "sinfo.jpg"
+      "image": "home/tos-4.webp"
     },
     {
       "skill": "experiences",
-      "image": "tos-portada.jpg"
+      "image": "home/tos-portada.jpg"
     },
     {
       "skill": "stories",
-      "image": "dem-story.jpg"
+      "image": "home/bbva-cover.png"
     }
   ]
 ]

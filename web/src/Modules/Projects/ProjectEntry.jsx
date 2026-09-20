@@ -3,18 +3,18 @@ import ButtonPrimary from "../../Components/Button";
 export default function ProjectEntry({ project, id, projectUrl }) {
   return (
     <section
-      className="w-full flex justify-center pt-3 pb-20 relative max-w-[800px] "
+      className="w-full flex justify-center relative max-w-[800px] surface-opacity-40 p-10 rounded-lg backdrop-blur-sm"
       id={id}
     >
-      <div className="w-full flex justify-between ">
-        <aidse className="flex flex-col max-w-[326px] gap-4">
+      <div className="w-full flex justify-between gap-10">
+        <aidse className="flex flex-col max-w-[326px] gap-4 pr-10 border-r-[.5px] border-default">
           <article className="flex flex-col gap-2">
             <span className="text-primary xheading-small">Team</span>
             <span className="body-small text-tertiary">Prodigioso Volcán</span>
           </article>
           <article className="flex flex-col gap-2">
             <span className="text-primary heading-xsmall">Project</span>
-            <ul className="flex flex-wrap gap-4">
+            <ul className="flex flex-wrap gap-2">
               {project?.project_categories.map((category, index) => {
                 return (
                   <li className="flex gap-4" key={index}>
@@ -30,7 +30,9 @@ export default function ProjectEntry({ project, id, projectUrl }) {
             <span className="text-primary heading-xsmall">My Role</span>
             <span className="body-small text-tertiary">Product Designer</span>
           </article>
-          <ButtonPrimary projectUrl={projectUrl} />
+          {project?.projectUrl ? (
+            <ButtonPrimary projectUrl={projectUrl} />
+          ) : null}
         </aidse>
 
         <article className="w-[440px] flex gap-4 flex-col">

@@ -89,10 +89,10 @@ export default function Hero() {
                 className={`img-bg w-full h-full absolute top-0 left-0`}
                 style={{
                   "--delay": `${index * 2.5}s`,
-                  backgroundImage: `url(/home/${item.image})`,
+                  backgroundImage: `url(/${item.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  filter: "brightness(.15) grayscale(1)",
+                  filter: "brightness(.25) grayscale(1)",
                 }}
               ></div>
             );
@@ -106,7 +106,7 @@ export default function Hero() {
                 className={`img-bg w-full h-full absolute top-0 left-0`}
                 style={{
                   "--delay": `${(index + HERODATA[cycle].length - 1) * 2.5}s`,
-                  backgroundImage: `url(/home/${item.image})`,
+                  backgroundImage: `url(/${item.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   filter: "brightness(.25) grayscale(1)",
@@ -130,7 +130,7 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src={`/home/${item.image}`}
+                  src={`/${item.image}`}
                   className="h-[500px] w-[750px] object-cover"
                 />
               </figure>
@@ -149,7 +149,7 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src={`/home/${item.image}`}
+                  src={`/${item.image}`}
                   className="h-[500px] w-[750px] object-cover"
                 />
               </figure>

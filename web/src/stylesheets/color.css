@@ -77,6 +77,12 @@
 .surface-white {
   background-color: var(--surface-white);
 }
+.surface-opacity-20 {
+  background-color: rgba(0, 0, 0, 0.80);
+}
+.surface-opacity-40 {
+  background-color: rgba(0, 0, 0, 0.60);
+}
 .text-on-primary {
   color: var(--text-on-primary);
 }

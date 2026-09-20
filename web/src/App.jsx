@@ -12,6 +12,7 @@ import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 import TheOtherSpain from "./TheOtherSpain.jsx";
 import Democrata from "./Democrata.jsx";
+import Carbon2Nature from "./Carbon2Nature.jsx";
 
 
 const Wrapper = ({ children }) => {
@@ -41,6 +42,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/the-other-spain" element={<TheOtherSpain />} />
               <Route path="/democrata" element={<Democrata />} />
+              <Route path="/carbon2nature" element={<Carbon2Nature />} />
             </Routes >
           </Wrapper>
         </Router>
