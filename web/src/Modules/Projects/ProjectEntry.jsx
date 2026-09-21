@@ -31,7 +31,7 @@ export default function ProjectEntry({ project, id, projectUrl }) {
             <span className="body-small text-tertiary">Product Designer</span>
           </article>
           {project?.projectUrl ? (
-            <ButtonPrimary projectUrl={projectUrl} />
+            <ButtonPrimary projectUrl={project?.projectUrl} />
           ) : null}
         </aidse>
 
