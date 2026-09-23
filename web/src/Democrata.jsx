@@ -116,7 +116,7 @@ export default function Democrata() {
       <ImageSection>
         <div className="grid grid-cols-10 gap-4 w-full">
           <video
-            controlsList="nodownload"
+            playsInline
             autoPlay
             muted
             loop
@@ -237,7 +237,7 @@ export default function Democrata() {
       <ImageSection>
         <div className="grid grid-cols-8 gap-4">
           <video
-            controlsList="nodownload"
+            playsInline
             autoPlay
             muted
             loop
