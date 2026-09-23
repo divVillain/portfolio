@@ -4,7 +4,7 @@ import PROJECTS from "../../data/PROJECTS.json";
 
 export default function ProjectHeader({ project }) {
   return (
-    <header className="w-full flex p-8  gap-4 relative h-[90vh] items-end justify-between">
+    <header className="w-full flex p-2 md:p-8 flex-col md:flex-row  gap-4 relative pt-40 md:h-[90vh] md:items-end justify-between">
       <img
         src={`${project?.cover?.url}`}
         className="w-full rounded-lg object-cover absolute top-0 left-0 z-0 h-full "

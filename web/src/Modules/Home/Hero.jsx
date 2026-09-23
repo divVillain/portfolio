@@ -116,7 +116,10 @@ export default function Hero() {
           })}
       </figure>
 
-      <div ref={imgRef} className="absolute  h-[500px] w-[750px] z-[2]">
+      <div
+        ref={imgRef}
+        className="absolute h-[400px] w-[300px] md:h-[500px] md:w-[750px] z-[2]"
+      >
         {HERODATA[cycle]
           .slice(0, HERODATA[cycle].length - 1)
           .map((item, index) => {
@@ -131,7 +134,7 @@ export default function Hero() {
               >
                 <img
                   src={`/${item.image}`}
-                  className="h-[500px] w-[750px] object-cover"
+                  className="h-[400px] w-[300px] md:h-[500px] md:w-[750px] object-cover"
                 />
               </figure>
             );
@@ -150,24 +153,24 @@ export default function Hero() {
               >
                 <img
                   src={`/${item.image}`}
-                  className="h-[500px] w-[750px] object-cover"
+                  className="h-[400px] w-[300px] md:h-[500px] md:w-[750px] object-cover"
                 />
               </figure>
             );
           })}
       </div>
       <h1
-        className="w-full px-10 justify-between items-center text-white text-[5.625rem] font-bold z-[20] absolute tracking-tight
-                 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex gap-4 max-w-[1400px]"
+        className="w-full px-10 justify-between items-center text-white text-[52px] md:text-[5.625rem] font-bold z-[20] absolute tracking-tight
+                 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col md:flex-row gap-4 max-w-[1400px]"
       >
         I design{" "}
-        <div className="words-container flex flex-col h-[150px] overflow-hidden pr-4 relative w-[420px]">
+        <div className="words-container flex flex-col w-full h-[80px] md:h-[150px] overflow-hidden pr-4 relative md:w-[420px] mt-[300px] md:mt-0">
           {HERODATA[cycle]
             .slice(0, HERODATA[cycle].length - 1)
             .map((item, index) => {
               return (
                 <strong
-                  className={`word display-decorative-large-italic text-primary-red italic absolute top-0 left-0`}
+                  className={`word text-center display-decorative-large-italic text-primary-red italic absolute top-0 md:left-0 left-[50%]`}
                   key={index}
                   style={{ "--delay": `${index * 2.5}s` }}
                 >
@@ -180,7 +183,7 @@ export default function Hero() {
             .map((item, index) => {
               return (
                 <strong
-                  className={`word display-decorative-large-italic text-primary-red italic absolute top-0 left-0`}
+                  className={`word text-center display-decorative-large-italic text-primary-red italic absolute top-0 md:left-0 left-[50%]`}
                   key={index}
                   style={{
                     "--delay": `${(index + HERODATA[cycle].length - 1) * 2.5}s`,

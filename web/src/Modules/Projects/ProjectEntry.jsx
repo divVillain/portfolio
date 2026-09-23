@@ -1,12 +1,12 @@
 import ButtonPrimary from "../../Components/Button";
 
-export default function ProjectEntry({ project, id, projectUrl }) {
+export default function ProjectEntry({ project, id }) {
   return (
     <section
-      className="w-full flex justify-center relative max-w-[800px] surface-opacity-40 p-10 rounded-lg backdrop-blur-sm"
+      className="w-full flex justify-center relative max-w-[800px] surface-opacity-40 p-6 md:p-10 rounded-lg backdrop-blur-sm"
       id={id}
     >
-      <div className="w-full flex justify-between gap-10">
+      <div className="w-full flex flex-col md:flex-row justify-between gap-10">
         <aidse className="flex flex-col max-w-[326px] gap-4 pr-10 border-r-[.5px] border-default">
           <article className="flex flex-col gap-2">
             <span className="text-primary xheading-small">Team</span>
@@ -35,7 +35,7 @@ export default function ProjectEntry({ project, id, projectUrl }) {
           ) : null}
         </aidse>
 
-        <article className="w-[440px] flex gap-4 flex-col">
+        <article className="w-[440px] flex gap-4 flex-col w-full">
           <h2 className="text-primary heading-small">Overview</h2>
           <p className="body-default text-secondary leading-[160%]">
             {project?.projectEntryDescription}

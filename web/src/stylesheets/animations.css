@@ -278,3 +278,33 @@
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
 }
+
+@media (max-width: 500px) {
+  .word {
+    transform: translateY(100%);
+    animation: wordsUp 7.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes wordsUp {
+    0% {
+      transform: translateY(100%) translateX(-50%);
+    }
+
+    8% {
+      transform: translateY(0%) translateX(-50%);
+    }
+
+    32% {
+      transform: translateY(0%) translateX(-50%);
+    }
+
+    40% {
+      transform: translateY(-100%) translateX(-50%);
+    }
+
+    100% {
+      transform: translateY(-100%) translateX(-50%);
+    }
+  }
+}

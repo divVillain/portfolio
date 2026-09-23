@@ -61,14 +61,6 @@ p {
 
 /* || PROJECTS || */
 
-.projectAlt {
-  font-family: "NeueHaasGrotesk";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  color: rgba(255, 255, 255, 0.5);
-}
 
 .projectAlt.default {
   opacity: 0.2;
@@ -168,6 +160,14 @@ p {
   font-weight: 400;
   letter-spacing: -0.02em;
 }
+.display-decorative-medium-italic {
+  font-family: "ZTOtez";
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-style: italic;
+}
 
 .display-decorative-small {
   font-family: "ZTOtez";
@@ -176,12 +176,28 @@ p {
   font-weight: 400;
   letter-spacing: -0.02em;
 }
+.display-decorative-small-italic {
+  font-family: "ZTOtez";
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-style: italic;
+}
 .display-decorative-xsmall {
   font-family: "ZTOtez";
   font-size: 1.5rem;
   line-height: 1;
   font-weight: 400;
   letter-spacing: -0.02em;
+}
+.display-decorative-xsmall-italic {
+  font-family: "ZTOtez";
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-style: italic;
 }
 
 /* HEADING */
@@ -265,4 +281,31 @@ p {
   font-size: 0.875rem;
   line-height: 1.4;
   font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  .display-decorative-large-italic {
+    font-family: "ZTOtez";
+    font-size: 4rem;
+    line-height: 1.15;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    font-stretch: 75%;
+    font-style: italic;
+  }
+  .display-decorative-small {
+    font-family: "ZTOtez";
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    font-style: normal;
+  }
+  .display-large {
+    font-family: "NeueHaasGrotesk";
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
 }

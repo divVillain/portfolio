@@ -48,7 +48,7 @@ function BulletList({ children }) {
 
 function AnchorSection({ children, id, index="" }) {
   return (
-    <article id={`${id}`} className="fade-in grid grid-cols-12 gap-10 max-w-[800px]">
+    <article id={`${id}`} className="fade-in flex flex-col md:grid md:grid-cols-12 gap-10 max-w-[800px] w-full">
       {id ? (
         <div className="flex gap-4 col-span-4">
             <span className="text-tertiary body-xlarge">0{index}</span>

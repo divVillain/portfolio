@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
     return (
-        <nav className="nav-animation fixed w-full flex items-center justify-between py-8 top-0 left-0 z-[90] px-10">
+        <nav className="nav-animation fixed w-full flex items-center justify-between p-4 md:py-8 md:px-10 top-0 left-0 z-[90] ">
             <div className="head-container flex items-center gap-4">
                 <header className="flex flex-col">
                     <span className="text-[18px] difference text-gray-100"><Link to="/">Jaime González</Link></span>
