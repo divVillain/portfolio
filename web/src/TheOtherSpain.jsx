@@ -384,6 +384,7 @@ export default function TheOtherSpain() {
       <ImageSection>
         <div className="grid grid-cols-7 gap-4 w-full">
           <video
+            controlsList="nodownload"
             autoPlay
             muted
             loop
@@ -434,6 +435,7 @@ export default function TheOtherSpain() {
       </AnchorSection>
       <ImageSection>
         <video
+          controlsList="nodownload"
           autoPlay
           muted
           loop

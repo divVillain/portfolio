@@ -7,7 +7,7 @@ export default function ProjectEntry({ project, id }) {
       id={id}
     >
       <div className="w-full flex flex-col md:flex-row justify-between gap-10">
-        <aidse className="flex flex-col max-w-[326px] gap-4 pr-10 border-r-[.5px] border-default">
+        <aidse className="flex flex-col max-w-[326px] gap-4 md:pr-10 md:border-r-[.5px] md:border-default">
           <article className="flex flex-col gap-2">
             <span className="text-primary xheading-small">Team</span>
             <span className="body-small text-tertiary">Prodigioso Volcán</span>
@@ -35,7 +35,7 @@ export default function ProjectEntry({ project, id }) {
           ) : null}
         </aidse>
 
-        <article className="w-[440px] flex gap-4 flex-col w-full">
+        <article className="flex gap-4 flex-col w-full">
           <h2 className="text-primary heading-small">Overview</h2>
           <p className="body-default text-secondary leading-[160%]">
             {project?.projectEntryDescription}

@@ -4,8 +4,6 @@ import PROJECTS from "./data/PROJECTS.json";
 import ProjectSlogan from "./Modules/Projects/ProjectSlogan.jsx";
 import ProjectLayout from "./Modules/Projects/ProjectLayout.jsx";
 
-import { useEffect, useState } from "react";
-
 import {
   Heading,
   SubHeading,
@@ -100,6 +98,7 @@ export default function Carbon2Nature() {
         <div className="grid grid-cols-2 w-full gap-4">
           <div className="flex flex-col gap-4 w-full">
             <video
+              controlsList="nodownload"
               autoPlay
               loop
               muted
@@ -141,6 +140,7 @@ export default function Carbon2Nature() {
       <ImageSection>
         <div className="grid grid-cols-2 w-full gap-4">
           <video
+            controlsList="nodownload"
             autoPlay
             loop
             muted
@@ -181,6 +181,7 @@ export default function Carbon2Nature() {
             src="/projects/carbon2nature/c2n-06.jpg"
           />
           <video
+            controlsList="nodownload"
             autoPlay
             loop
             muted

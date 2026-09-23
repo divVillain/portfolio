@@ -134,7 +134,7 @@ export default function Hero() {
               >
                 <img
                   src={`/${item.image}`}
-                  className="h-[400px] w-[300px] md:h-[500px] md:w-[750px] object-cover"
+                  className="h-[350px] w-[300px] md:h-[500px] md:w-[750px] object-cover"
                 />
               </figure>
             );
@@ -153,7 +153,7 @@ export default function Hero() {
               >
                 <img
                   src={`/${item.image}`}
-                  className="h-[400px] w-[300px] md:h-[500px] md:w-[750px] object-cover"
+                  className="h-[350px] w-[300px] md:h-[500px] md:w-[750px] object-cover"
                 />
               </figure>
             );
@@ -164,7 +164,7 @@ export default function Hero() {
                  top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col md:flex-row gap-4 max-w-[1400px]"
       >
         I design{" "}
-        <div className="words-container flex flex-col w-full h-[80px] md:h-[150px] overflow-hidden pr-4 relative md:w-[420px] mt-[300px] md:mt-0">
+        <div className="words-container flex flex-col w-[300px] h-[80px] md:h-[150px] overflow-hidden pr-4 relative md:w-[420px] mt-[200px] md:mt-0">
           {HERODATA[cycle]
             .slice(0, HERODATA[cycle].length - 1)
             .map((item, index) => {
