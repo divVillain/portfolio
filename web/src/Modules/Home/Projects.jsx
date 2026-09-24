@@ -144,7 +144,7 @@ export default function Projects() {
                     to={project?.slug}
                     onMouseEnter={handleMouseHover}
                     onMouseLeave={handleMouseLeave}
-                    className={`project py-2 md:py-10 ${hoveredIndex === index ? "text-[3.5rem] text-[7rem]" : "text-[3rem] md:text-[6.5rem]"} leading-[100%] font-bold tracking-tight
+                    className={`project py-2 md:py-10 ${hoveredIndex === index ? "text-[3.15rem] md:text-[7rem]" : "text-[3rem] md:text-[6.5rem]"} leading-[100%] font-bold tracking-tight
                                 flex  text-white ${hoveredIndex === index ? "" : "opacity-50"}`}
                   >
                     {" "}
