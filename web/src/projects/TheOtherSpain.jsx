@@ -1,9 +1,9 @@
-import ProjectHeader from "./Modules/Projects/ProjectHeader.jsx";
-import ProjectEntry from "./Modules/Projects/ProjectEntry.jsx";
-import NextProject from "./Modules/Projects/NextProject.jsx";
-import PROJECTS from "./data/PROJECTS.json";
-import ProjectSlogan from "./Modules/Projects/ProjectSlogan.jsx";
-import ProjectLayout from "./Modules/Projects/ProjectLayout.jsx";
+import ProjectHeader from "../Modules/Projects/ProjectHeader.jsx";
+import ProjectEntry from "../Modules/Projects/ProjectEntry.jsx";
+import NextProject from "../Modules/Projects/NextProject.jsx";
+import PROJECTS from "../data/PROJECTS.json";
+import ProjectSlogan from "../Modules/Projects/ProjectSlogan.jsx";
+import ProjectLayout from "../Modules/Projects/ProjectLayout.jsx";
 
 import { useEffect, useState } from "react";
 
@@ -20,7 +20,7 @@ import {
   Image,
   ImageList,
   ImageSection,
-} from "./Modules/Projects/ContentBlocks.jsx";
+} from "../Modules/Projects/ContentBlocks.jsx";
 
 function Block({ children, id }) {
   return (
@@ -126,7 +126,7 @@ export default function TheOtherSpain() {
           </p>
         </InsightList>
       </AnchorSection>
-      <div className="grid grid-cols-7 gap-4 w-full">
+      <div className="flex flex-col md:grid md:grid-cols-7 gap-4 w-full">
         <img
           className="col-span-5 h-full object-cover rounded-md"
           src="/projects/the-other-spain/tos-01.jpg"
@@ -382,7 +382,7 @@ export default function TheOtherSpain() {
         </p>
       </AnchorSection>
       <ImageSection>
-        <div className="grid grid-cols-7 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-7 gap-4 w-full">
           <video
             playsInline
             autoPlay
@@ -475,9 +475,9 @@ export default function TheOtherSpain() {
         </p>
       </AnchorSection>
       <ImageSection>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-4">
           <div className="flex flex-col gap-4 col-span-2">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
               <img
                 className="col-span-1 rounded-md"
                 src="/projects/the-other-spain/tos-10.jpg"

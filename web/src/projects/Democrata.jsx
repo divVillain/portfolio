@@ -1,9 +1,9 @@
-import ProjectHeader from "./Modules/Projects/ProjectHeader.jsx";
-import ProjectEntry from "./Modules/Projects/ProjectEntry.jsx";
-import NextProject from "./Modules/Projects/NextProject.jsx";
-import PROJECTS from "./data/PROJECTS.json";
-import ProjectSlogan from "./Modules/Projects/ProjectSlogan.jsx";
-import ProjectLayout from "./Modules/Projects/ProjectLayout.jsx";
+import ProjectHeader from "../Modules/Projects/ProjectHeader.jsx";
+import ProjectEntry from "../Modules/Projects/ProjectEntry.jsx";
+import NextProject from "../Modules/Projects/NextProject.jsx";
+import PROJECTS from "../data/PROJECTS.json";
+import ProjectSlogan from "../Modules/Projects/ProjectSlogan.jsx";
+import ProjectLayout from "../Modules/Projects/ProjectLayout.jsx";
 
 import { useEffect, useState } from "react";
 
@@ -21,7 +21,7 @@ import {
   Image,
   ImageList,
   ImageSection,
-} from "./Modules/Projects/ContentBlocks.jsx";
+} from "../Modules/Projects/ContentBlocks.jsx";
 
 function Block({ children, id }) {
   return (
@@ -114,7 +114,7 @@ export default function Democrata() {
         </Section>
       </AnchorSection>
       <ImageSection>
-        <div className="grid grid-cols-10 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-10 gap-4 w-full">
           <video
             playsInline
             autoPlay
@@ -192,7 +192,7 @@ export default function Democrata() {
         </BulletList>
       </AnchorSection>
       <ImageSection>
-        <div className="grid grid-cols-11 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-11 gap-4 w-full">
           <img
             className="col-span-8 rounded-md h-full object-cover"
             src="/projects/democrata/demo-logo.jpg"
@@ -235,7 +235,7 @@ export default function Democrata() {
       </AnchorSection>
 
       <ImageSection>
-        <div className="grid grid-cols-8 gap-4">
+        <div className="flex flex-col md:grid md:grid-cols-8 gap-4">
           <video
             playsInline
             autoPlay
@@ -250,7 +250,7 @@ export default function Democrata() {
             alt=""
           />
         </div>
-        <div className="grid grid-cols-7 gap-4">
+        <div className="flex flex-col md:grid md:grid-cols-7 gap-4">
           <img
             className="col-span-3 rounded-md h-full object-cover"
             src="/projects/democrata/dem-26.jpg"
@@ -262,7 +262,7 @@ export default function Democrata() {
           />
         </div>
         <Image src="/projects/democrata/dem-03.jpg" />
-        <div className="grid grid-cols-8 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-8 gap-4 w-full">
           <img
             className="col-span-5 rounded-md h-full object-cover"
             src="/projects/democrata/dem-04.jpg"
@@ -319,7 +319,7 @@ export default function Democrata() {
       </AnchorSection>
 
       <ImageSection>
-        <div className="grid grid-cols-3 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-4 w-full">
           <img
             className="rounded-md col-span-1 h-full object-cover"
             src="/projects/democrata/dem-08.jpg"
@@ -329,7 +329,7 @@ export default function Democrata() {
             src="/projects/democrata/dem-09.jpg"
           />
         </div>
-        <div className="grid grid-cols-2 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full">
           <img
             className="rounded-md col-span-1 h-full object-cover"
             src="/projects/democrata/dem-14.jpg"
@@ -339,7 +339,7 @@ export default function Democrata() {
             src="/projects/democrata/dem-23.jpg"
           />
         </div>
-        <div className="grid grid-cols-7 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-7 gap-4 w-full">
           <img
             className="rounded-md col-span-3 h-full object-cover"
             src="/projects/democrata/demo-anatomy-01.jpg"
@@ -403,7 +403,7 @@ export default function Democrata() {
       </AnchorSection>
 
       <ImageSection>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-4">
           <img
             className="col-span-1 h-full object-cover rounded-md"
             src="/projects/democrata/dem-18.jpg"

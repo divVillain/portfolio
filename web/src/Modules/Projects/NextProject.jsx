@@ -4,7 +4,7 @@ export default function NextProject({ project }) {
     return (
         <>
             <section className="next-project w-full relative h-[600px] md:h-[75vh]">
-                <figure className="h-[100vh]"
+                <figure className="h-[100vh] brightness-50 md:brightness-100"
                     style={{
                         backgroundImage: `${!project?.videoCover ? `url(${`${project?.cover?.url}`})` : null}`,
                         backgroundSize: 'cover',

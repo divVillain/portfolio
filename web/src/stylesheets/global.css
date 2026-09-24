@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 * {
   /* 
   outline: 1px solid pink;
@@ -15,7 +13,6 @@
 body {
   background-color: rgb(25, 25, 25);
 }
-
 
 body {
   overflow-x: hidden;

@@ -1,8 +1,8 @@
-import ProjectHeader from "./Modules/Projects/ProjectHeader.jsx";
-import NextProject from "./Modules/Projects/NextProject.jsx";
-import PROJECTS from "./data/PROJECTS.json";
-import ProjectSlogan from "./Modules/Projects/ProjectSlogan.jsx";
-import ProjectLayout from "./Modules/Projects/ProjectLayout.jsx";
+import ProjectHeader from "../Modules/Projects/ProjectHeader.jsx";
+import NextProject from "../Modules/Projects/NextProject.jsx";
+import PROJECTS from "../data/PROJECTS.json";
+import ProjectSlogan from "../Modules/Projects/ProjectSlogan.jsx";
+import ProjectLayout from "../Modules/Projects/ProjectLayout.jsx";
 
 import {
   Heading,
@@ -18,7 +18,7 @@ import {
   Image,
   ImageList,
   ImageSection,
-} from "./Modules/Projects/ContentBlocks.jsx";
+} from "../Modules/Projects/ContentBlocks.jsx";
 
 function Block({ children, id }) {
   return (
@@ -95,7 +95,7 @@ export default function Carbon2Nature() {
         </Section>
       </AnchorSection>
       <ImageSection>
-        <div className="grid grid-cols-2 w-full gap-4">
+        <div className="flex flex-col md:grid md:grid-cols-2 w-full gap-4">
           <div className="flex flex-col gap-4 w-full">
             <video
               playsInline
@@ -138,7 +138,7 @@ export default function Carbon2Nature() {
       </AnchorSection>
 
       <ImageSection>
-        <div className="grid grid-cols-2 w-full gap-4">
+        <div className="flex flex-col md:grid md:grid-cols-2 w-full gap-4">
           <video
             playsInline
             autoPlay
@@ -175,7 +175,7 @@ export default function Carbon2Nature() {
       </AnchorSection>
 
       <ImageSection>
-        <div className="grid grid-cols-6 gap-4 w-full">
+        <div className="flex flex-col md:grid md:grid-cols-6 gap-4 w-full">
           <img
             className="col-span-2 object-cover rounded-md"
             src="/projects/carbon2nature/c2n-06.jpg"

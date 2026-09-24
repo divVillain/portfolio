@@ -9,9 +9,9 @@ import Mobile from "./Mobile.jsx";
 
 import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
-import TheOtherSpain from "./TheOtherSpain.jsx";
-import Democrata from "./Democrata.jsx";
-import Carbon2Nature from "./Carbon2Nature.jsx";
+import TheOtherSpain from "./projects/TheOtherSpain.jsx";
+import Democrata from "./projects/Democrata.jsx";
+import Carbon2Nature from "./projects/Carbon2Nature.jsx";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
